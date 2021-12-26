@@ -18,7 +18,7 @@ struct SplashView: View {
     // MARK: - Body
 
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.red, Color.black]), startPoint: .top, endPoint: .bottom)
+        LinearGradient(gradient: Gradient(colors: [Color.iMovieRose, Color.iMovieDarkBlue]), startPoint: .top, endPoint: .bottom)
             .edgesIgnoringSafeArea(.vertical)
             .overlay(
                 LottieView(name: Strings.spalshAnimationFileName)
