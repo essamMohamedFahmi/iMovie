@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
+		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
 		71C2D5BC785E450AEDF012C0 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */; };
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
 		24E2BD63CA6B4FF13EFD26A9 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D6A1377045DB949904E57F /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DDAA3562779090900BDAE2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DDAA3572779095000BDAE2B /* Color+App.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8B08C31B3A878D0E6E06BE9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,15 +94,9 @@
 			children = (
 				CE96BA942778C13200CB7C08 /* Lottie */,
 				CEF85F672777A82D00517ED7 /* Assets.xcassets */,
+				1DDAA354277906FC00BDAE2B /* Colors.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		CEC522202778B86300F76DEA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		CEC522212778B88000F76DEA /* App */ = {
@@ -142,7 +148,7 @@
 				CEC5221F2778B85A00F76DEA /* Resources */,
 				CEC522222778B88C00F76DEA /* Scenes */,
 				CE96BA992778C14F00CB7C08 /* Views */,
-				CEC522202778B86300F76DEA /* Supporting Files */,
+				1DDAA3562779090900BDAE2B /* Extensions */,
 				CEF85F692777A82D00517ED7 /* Preview Content */,
 			);
 			path = iMovie;
@@ -216,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */,
 				CEF85F6B2777A82D00517ED7 /* Preview Assets.xcassets in Resources */,
 				CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */,
 				CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */,
@@ -273,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
+				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
 			);
