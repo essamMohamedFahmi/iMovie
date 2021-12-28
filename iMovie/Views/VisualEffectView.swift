@@ -1,5 +1,5 @@
 //
-//  BlurEffectView.swift
+//  VisualEffectView.swift
 //  iMovie
 //
 //  Created by MorsyElsokary on 27/12/2021.

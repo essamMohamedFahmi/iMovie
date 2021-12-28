@@ -9,10 +9,33 @@ import SwiftUI
 
 extension Font {
     
-    // MARK: - Properties
+    // MARK: - Methods
     
-    static let iMovieBold = Font.custom("Poppins-Bold", size: 40)
-    static let iMovieMedium = Font.custom("Poppins-Medium", size: 20)
-    static let iMovieRegular = Font.custom("Poppins-Regular", size: 15)
-    static let iMovieLight = Font.custom("Poppins-Light", size: 10)
+    static func iMovieBold(_ size: CGFloat) -> Font {
+        Font.custom("Poppins Bold", size: size)
+    }
+
+    static func iMovieMedium(_ size: CGFloat) -> Font {
+        Font.custom("Poppins Medium", size: size)
+    }
+
+    static func iMovieRegular(_ size: CGFloat) -> Font {
+        Font.custom("Poppins Regular", size: size)
+    }
+
+    static func iMovieLight(_ size: CGFloat) -> Font {
+        Font.custom("Poppins Light", size: size)
+    }
+
+    static func iMovieArt(_ size: CGFloat) -> Font {
+        Font.custom("Art Brewery", size: size)
+    }
+
+    static func iMovieVonique(_ size: CGFloat) -> Font {
+        Font.custom("Vonique 64", size: size)
+    }
+
+    static func iMovieDaniel(_ size: CGFloat) -> Font {
+        Font.custom("Daniel Davis", size: size)
+    }
 }

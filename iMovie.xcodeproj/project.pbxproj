@@ -17,8 +17,14 @@
 		1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3512778FEF200BDAE2B /* ProfileView.swift */; };
 		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
-		1DFD1841277A610D003EE880 /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* BlurEffectView.swift */; };
+		1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* VisualEffectView.swift */; };
 		71C2D5BC785E450AEDF012C0 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */; };
+		CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */; };
+		CE38F0A4277BB89600B148FC /* Daniel-Davis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */; };
+		CE38F0A6277BB8BA00B148FC /* Vonique-64.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */; };
+		CE38F0A8277BBA6100B148FC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38F0A7277BBA6100B148FC /* ProgressBar.swift */; };
+		CE38F0AA277BD00F00B148FC /* panda.json in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A9277BD00F00B148FC /* panda.json */; };
+		CE38F0AD277BD2AB00B148FC /* panda-fly.json in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0AC277BD2AB00B148FC /* panda-fly.json */; };
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
 		CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96BA9A2778C19B00CB7C08 /* LottieView.swift */; };
@@ -40,10 +46,16 @@
 		1DDAA3512778FEF200BDAE2B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
-		1DFD1840277A610D003EE880 /* BlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
+		1DFD1840277A610D003EE880 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		24E2BD63CA6B4FF13EFD26A9 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D6A1377045DB949904E57F /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
+		CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Art-Brewery.ttf"; sourceTree = "<group>"; };
+		CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Daniel-Davis.ttf"; sourceTree = "<group>"; };
+		CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vonique-64.ttf"; sourceTree = "<group>"; };
+		CE38F0A7277BBA6100B148FC /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		CE38F0A9277BD00F00B148FC /* panda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panda.json; sourceTree = "<group>"; };
+		CE38F0AC277BD2AB00B148FC /* panda-fly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "panda-fly.json"; sourceTree = "<group>"; };
 		CE96BA952778C13200CB7C08 /* splash_iMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_iMovie.json; sourceTree = "<group>"; };
 		CE96BA962778C13200CB7C08 /* watch_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = watch_movie.json; sourceTree = "<group>"; };
 		CE96BA9A2778C19B00CB7C08 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -69,6 +81,9 @@
 		1DBD0AB3277B43AA00DC82C4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */,
+				CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */,
+				CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */,
 				1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */,
 				1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */,
 				1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */,
@@ -127,9 +142,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE38F0AB277BD01200B148FC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CEF85F672777A82D00517ED7 /* Assets.xcassets */,
+				1DDAA354277906FC00BDAE2B /* Colors.xcassets */,
+				1DAF2AF42779F0F6003B10C7 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		CE96BA942778C13200CB7C08 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				CE38F0AC277BD2AB00B148FC /* panda-fly.json */,
+				CE38F0A9277BD00F00B148FC /* panda.json */,
 				CE96BA952778C13200CB7C08 /* splash_iMovie.json */,
 				CE96BA962778C13200CB7C08 /* watch_movie.json */,
 			);
@@ -140,7 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
-				1DFD1840277A610D003EE880 /* BlurEffectView.swift */,
+				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
+				CE38F0A7277BBA6100B148FC /* ProgressBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,11 +176,9 @@
 		CEC5221F2778B85A00F76DEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE38F0AB277BD01200B148FC /* Assets */,
 				1DBD0AB3277B43AA00DC82C4 /* Fonts */,
 				CE96BA942778C13200CB7C08 /* Lottie */,
-				CEF85F672777A82D00517ED7 /* Assets.xcassets */,
-				1DDAA354277906FC00BDAE2B /* Colors.xcassets */,
-				1DAF2AF42779F0F6003B10C7 /* Images.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -285,13 +311,18 @@
 			files = (
 				1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */,
 				1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */,
+				CE38F0AA277BD00F00B148FC /* panda.json in Resources */,
 				CEF85F6B2777A82D00517ED7 /* Preview Assets.xcassets in Resources */,
 				1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */,
 				CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */,
 				1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */,
 				1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */,
+				CE38F0AD277BD2AB00B148FC /* panda-fly.json in Resources */,
 				CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */,
+				CE38F0A4277BB89600B148FC /* Daniel-Davis.ttf in Resources */,
 				CEF85F682777A82D00517ED7 /* Assets.xcassets in Resources */,
+				CE38F0A6277BB8BA00B148FC /* Vonique-64.ttf in Resources */,
+				CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */,
 				1DBD0ABB277B44B300DC82C4 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +379,8 @@
 				1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */,
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
-				1DFD1841277A610D003EE880 /* BlurEffectView.swift in Sources */,
+				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
+				CE38F0A8277BBA6100B148FC /* ProgressBar.swift in Sources */,
 				1DC3DEE7277B9F4D0035226A /* AppCoordinator.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,

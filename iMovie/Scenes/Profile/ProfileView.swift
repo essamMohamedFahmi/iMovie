@@ -18,7 +18,7 @@ struct ProfileView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text("Profile")
-                        .font(.iMovieBold)
+                        .font(.iMovieBold(40))
                         .foregroundColor(.white)
                         .padding()
                     
@@ -79,39 +79,38 @@ struct ProfileInfo: View {
         HStack(spacing: 30) {
             Image(profileImage)
                 .resizable()
-                .frame(width: 130  , height: 130)
+                .frame(width: 130, height: 130)
                 .cornerRadius(20)
                 .padding(.leading, 20)
             
-            VStack(alignment:.leading , spacing:40) {
-                VStack(alignment:.leading ,spacing:10) {
+            VStack(alignment: .leading, spacing:40) {
+                VStack(alignment: .leading, spacing:10) {
                     Text(profileName)
-                        .font(.iMovieMedium)
+                        .font(.iMovieMedium(20))
                         .foregroundColor(.white)
                     
                     Text(profileCaption)
-                        .font(.iMovieRegular)
+                        .font(.iMovieRegular(15))
                         .foregroundColor(Color.iMovieRose)
-                    
                 }
 
-                HStack(spacing:10) {
-                    VStack(alignment:.leading,spacing:10) {
+                HStack(spacing: 10) {
+                    VStack(alignment: .leading, spacing:10) {
                         Text("\(profileFollowersCount)")
                             .foregroundColor(.white)
                         
                         Text("Followers")
                             .foregroundColor(.white)
-                            .font(.iMovieLight)
+                            .font(.iMovieLight(10))
                     }
                     
-                    VStack(alignment:.leading,spacing:10)  {
+                    VStack(alignment: .leading, spacing: 10)  {
                         Text("\(profileFollowingCount)")
                             .foregroundColor(.white)
                         
                         Text("Following")
                             .foregroundColor(.white)
-                            .font(.iMovieLight)
+                            .font(.iMovieLight(10))
                     }
                 }
             }
@@ -146,10 +145,10 @@ struct ProfileSegmentOne: View {
                 Button("Rate Us") {
                 }
             }
-            .padding([.leading,.trailing], 20)
-            .font(.iMovieMedium)
+            .padding([.leading, .trailing], 20)
+            .font(.iMovieMedium(20))
             .foregroundColor(.white)
-            .padding([.top,.bottom], 10)
+            .padding([.top, .bottom], 10)
         }
         .frame(height: 130)
     }
@@ -176,7 +175,7 @@ struct ProfileSegmentTwo: View {
                 }
             }
             .padding([.leading,.trailing], 20)
-            .font(.iMovieMedium)
+            .font(.iMovieMedium(20))
             .foregroundColor(.white)
             .padding([.top,.bottom], 10)
         }
@@ -204,7 +203,7 @@ struct ProfileSegmentThree: View {
                 }
             }
             .padding([.leading,.trailing], 20)
-            .font(.iMovieMedium)
+            .font(.iMovieMedium(20))
             .foregroundColor(.white)
             .padding([.top,.bottom], 10)
         }

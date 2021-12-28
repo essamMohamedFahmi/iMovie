@@ -11,8 +11,10 @@ struct SplashView: View {
 
     // MARK: - Properties
 
+    @State var progressValue: Float = 0.0
+
     private enum Strings {
-        static let spalshAnimationFileName = "splash_iMovie"
+        static let spalshAnimationFileName = "panda"
     }
 
     // MARK: - Body
@@ -22,7 +24,7 @@ struct SplashView: View {
             .edgesIgnoringSafeArea(.vertical)
             .overlay(
                 LottieView(name: Strings.spalshAnimationFileName)
-                    .padding([.leading, .trailing], 30.0)
+                    .offset(y: -20)
             )
     }
 }
