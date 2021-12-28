@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
+		1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */; };
+		1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */; };
+		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
+		1DBD0ABB277B44B300DC82C4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */; };
+		1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD99AE277B58C600CD080A /* Fonts+App.swift */; };
+		1DC3DEE7277B9F4D0035226A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */; };
 		1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3512778FEF200BDAE2B /* ProfileView.swift */; };
 		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
+		1DFD1841277A610D003EE880 /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* BlurEffectView.swift */; };
 		71C2D5BC785E450AEDF012C0 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */; };
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
@@ -21,9 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		1DBD99AB277B583D00CD080A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBD99AE277B58C600CD080A /* Fonts+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+App.swift"; sourceTree = "<group>"; };
+		1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1DDAA3512778FEF200BDAE2B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
+		1DFD1840277A610D003EE880 /* BlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
 		24E2BD63CA6B4FF13EFD26A9 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		30CF43282F8C99E7D402BD7B /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D6A1377045DB949904E57F /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,18 +66,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DBD0AB3277B43AA00DC82C4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */,
+				1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */,
+				1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */,
+				1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1DC3DEE4277B9CA70035226A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DBD99AB277B583D00CD080A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DC3DEE5277B9F3C0035226A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		1DDAA3502778FEE300BDAE2B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				1DDAA3512778FEF200BDAE2B /* ProfileView.swift */,
 			);
 			path = Profile;
-                         sourceTree = "<group>";
+			sourceTree = "<group>";
 		};
 		1DDAA3562779090900BDAE2B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				1DDAA3572779095000BDAE2B /* Color+App.swift */,
+				1DBD99AE277B58C600CD080A /* Fonts+App.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -95,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
+				1DFD1840277A610D003EE880 /* BlurEffectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,9 +148,11 @@
 		CEC5221F2778B85A00F76DEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DBD0AB3277B43AA00DC82C4 /* Fonts */,
 				CE96BA942778C13200CB7C08 /* Lottie */,
 				CEF85F672777A82D00517ED7 /* Assets.xcassets */,
 				1DDAA354277906FC00BDAE2B /* Colors.xcassets */,
+				1DAF2AF42779F0F6003B10C7 /* Images.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -156,10 +204,12 @@
 			isa = PBXGroup;
 			children = (
 				CEC522212778B88000F76DEA /* App */,
+				1DC3DEE4277B9CA70035226A /* Supporting Files */,
 				CEC5221F2778B85A00F76DEA /* Resources */,
 				CEC522222778B88C00F76DEA /* Scenes */,
 				CE96BA992778C14F00CB7C08 /* Views */,
 				1DDAA3562779090900BDAE2B /* Extensions */,
+				1DC3DEE5277B9F3C0035226A /* Core */,
 				CEF85F692777A82D00517ED7 /* Preview Content */,
 			);
 			path = iMovie;
@@ -233,11 +283,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */,
 				1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */,
 				CEF85F6B2777A82D00517ED7 /* Preview Assets.xcassets in Resources */,
+				1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */,
 				CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */,
+				1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */,
+				1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */,
 				CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */,
 				CEF85F682777A82D00517ED7 /* Assets.xcassets in Resources */,
+				1DBD0ABB277B44B300DC82C4 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +347,9 @@
 			files = (
 				1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */,
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
+				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
+				1DFD1841277A610D003EE880 /* BlurEffectView.swift in Sources */,
+				1DC3DEE7277B9F4D0035226A /* AppCoordinator.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
@@ -429,6 +487,7 @@
 				DEVELOPMENT_TEAM = U5L5GQC4UP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +519,7 @@
 				DEVELOPMENT_TEAM = U5L5GQC4UP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
