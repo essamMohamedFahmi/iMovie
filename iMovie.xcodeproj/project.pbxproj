@@ -14,7 +14,6 @@
 		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
 		1DBD0ABB277B44B300DC82C4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */; };
 		1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD99AE277B58C600CD080A /* Fonts+App.swift */; };
-		1DC3DEE7277B9F4D0035226A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */; };
 		1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3512778FEF200BDAE2B /* ProfileView.swift */; };
 		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
@@ -23,9 +22,9 @@
 		CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */; };
 		CE38F0A4277BB89600B148FC /* Daniel-Davis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */; };
 		CE38F0A6277BB8BA00B148FC /* Vonique-64.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */; };
-		CE38F0A8277BBA6100B148FC /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38F0A7277BBA6100B148FC /* ProgressBar.swift */; };
 		CE38F0AA277BD00F00B148FC /* panda.json in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A9277BD00F00B148FC /* panda.json */; };
 		CE38F0AD277BD2AB00B148FC /* panda-fly.json in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0AC277BD2AB00B148FC /* panda-fly.json */; };
+		CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C163277E20A9009E4FF6 /* AppState.swift */; };
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
 		CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96BA9A2778C19B00CB7C08 /* LottieView.swift */; };
@@ -44,7 +43,6 @@
 		1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		1DBD99AB277B583D00CD080A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DBD99AE277B58C600CD080A /* Fonts+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+App.swift"; sourceTree = "<group>"; };
-		1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1DDAA3512778FEF200BDAE2B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -55,9 +53,9 @@
 		CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Art-Brewery.ttf"; sourceTree = "<group>"; };
 		CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Daniel-Davis.ttf"; sourceTree = "<group>"; };
 		CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vonique-64.ttf"; sourceTree = "<group>"; };
-		CE38F0A7277BBA6100B148FC /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		CE38F0A9277BD00F00B148FC /* panda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panda.json; sourceTree = "<group>"; };
 		CE38F0AC277BD2AB00B148FC /* panda-fly.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "panda-fly.json"; sourceTree = "<group>"; };
+		CE41C163277E20A9009E4FF6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CE96BA952778C13200CB7C08 /* splash_iMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_iMovie.json; sourceTree = "<group>"; };
 		CE96BA962778C13200CB7C08 /* watch_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = watch_movie.json; sourceTree = "<group>"; };
 		CE96BA9A2778C19B00CB7C08 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -100,14 +98,6 @@
 				1DBD99AB277B583D00CD080A /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1DC3DEE5277B9F3C0035226A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				1DC3DEE6277B9F4D0035226A /* AppCoordinator.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		1DDAA3502778FEE300BDAE2B /* Profile */ = {
@@ -171,7 +161,6 @@
 			children = (
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
 				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
-				CE38F0A7277BBA6100B148FC /* ProgressBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +178,7 @@
 		CEC522212778B88000F76DEA /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CE41C163277E20A9009E4FF6 /* AppState.swift */,
 				CEF85F632777A82B00517ED7 /* iMovieApp.swift */,
 			);
 			path = App;
@@ -238,7 +228,6 @@
 				CEC522222778B88C00F76DEA /* Scenes */,
 				CE96BA992778C14F00CB7C08 /* Views */,
 				1DDAA3562779090900BDAE2B /* Extensions */,
-				1DC3DEE5277B9F3C0035226A /* Core */,
 				CEF85F692777A82D00517ED7 /* Preview Content */,
 			);
 			path = iMovie;
@@ -383,8 +372,7 @@
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
-				CE38F0A8277BBA6100B148FC /* ProgressBar.swift in Sources */,
-				1DC3DEE7277B9F4D0035226A /* AppCoordinator.swift in Sources */,
+				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
 				1D0E2EE3277E034900640FFA /* View+App.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
@@ -529,7 +517,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -561,7 +549,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +559,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
