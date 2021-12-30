@@ -12,6 +12,6 @@ struct AppCoordinator {
     // MARK: - Methods
     
     func start() -> some View {
-        SplashView()
+        ProfileView()
     }
 }

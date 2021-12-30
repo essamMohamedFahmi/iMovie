@@ -145,10 +145,7 @@ struct ProfileSegmentOne: View {
                 Button("Rate Us") {
                 }
             }
-            .padding([.leading, .trailing], 20)
-            .font(.iMovieMedium(20))
-            .foregroundColor(.white)
-            .padding([.top, .bottom], 10)
+            .segmentStyle()
         }
         .frame(height: 130)
     }
@@ -174,10 +171,7 @@ struct ProfileSegmentTwo: View {
                     Text("Notices")
                 }
             }
-            .padding([.leading,.trailing], 20)
-            .font(.iMovieMedium(20))
-            .foregroundColor(.white)
-            .padding([.top,.bottom], 10)
+            .segmentStyle()
         }
         .frame(height: 90)
     }
@@ -202,11 +196,20 @@ struct ProfileSegmentThree: View {
                 Button("About Us") {
                 }
             }
-            .padding([.leading,.trailing], 20)
-            .font(.iMovieMedium(20))
-            .foregroundColor(.white)
-            .padding([.top,.bottom], 10)
+            .segmentStyle()
         }
         .frame(height: 90)
     }
+}
+
+struct SegmentModifier: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.iMovieMedium(20))
+            .foregroundColor(.white)
+            .padding([.top,.bottom], 10)
+            .padding([.leading,.trailing], 20)
+    }
+
 }
