@@ -145,7 +145,7 @@ struct ProfileSegmentOne: View {
                 Button("Rate Us") {
                 }
             }
-            .segmentStyle()
+            .modifier(SegmentModifier())
         }
         .frame(height: 130)
     }
@@ -171,7 +171,7 @@ struct ProfileSegmentTwo: View {
                     Text("Notices")
                 }
             }
-            .segmentStyle()
+            .modifier(SegmentModifier())
         }
         .frame(height: 90)
     }
@@ -186,24 +186,21 @@ struct ProfileSegmentThree: View {
                 .opacity(0.3)
             
             VStack(alignment: .leading, spacing: 10) {
-                Button("Settings") {
-                }
+                Button("Settings"){}
                 
                 Rectangle()
                     .frame(maxWidth: .infinity, maxHeight: 2)
                     .opacity(0.5)
                 
-                Button("About Us") {
-                }
+                Button("About Us"){}
             }
-            .segmentStyle()
+            .modifier(SegmentModifier())
         }
         .frame(height: 90)
     }
 }
 
 struct SegmentModifier: ViewModifier {
-    
     func body(content: Content) -> some View {
         content
             .font(.iMovieMedium(20))
@@ -211,5 +208,4 @@ struct SegmentModifier: ViewModifier {
             .padding([.top,.bottom], 10)
             .padding([.leading,.trailing], 20)
     }
-
 }

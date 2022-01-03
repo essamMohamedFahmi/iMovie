@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0E2EE3277E034900640FFA /* View+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E2EE2277E034900640FFA /* View+App.swift */; };
 		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
 		1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE12783A1F2006779D5 /* LoginView.swift */; };
+		1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE32783A335006779D5 /* View+Placeholder.swift */; };
 		1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */; };
 		1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */; };
 		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
@@ -36,9 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D0E2EE2277E034900640FFA /* View+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+App.swift"; sourceTree = "<group>"; };
 		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DB0AFE12783A1F2006779D5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DB0AFE32783A335006779D5 /* View+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
 		1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 		1DDAA3562779090900BDAE2B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DB0AFE32783A335006779D5 /* View+Placeholder.swift */,
 				1DDAA3572779095000BDAE2B /* Color+App.swift */,
 				1DBD99AE277B58C600CD080A /* Fonts+App.swift */,
-				1D0E2EE2277E034900640FFA /* View+App.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,7 +384,7 @@
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
-				1D0E2EE3277E034900640FFA /* View+App.swift in Sources */,
+				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
