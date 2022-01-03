@@ -32,7 +32,9 @@ struct SplashView: View {
     private func delay() async {
         // Delay of 2 seconds (1 second = 1_000_000_000 nanoseconds)
         try? await Task.sleep(nanoseconds: 2_000_000_000)
-        appState.hasOnboarded = true
+        DispatchQueue.main.async {
+            appState.hasOnboarded = true
+        }
     }
 }
 

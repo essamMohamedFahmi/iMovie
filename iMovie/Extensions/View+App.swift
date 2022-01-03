@@ -9,7 +9,7 @@ import SwiftUI
 
 extension View {
     
-    //MARK: - Methods
+    // MARK: - Methods
     
     func segmentStyle() -> some View {
         self.modifier(SegmentModifier())
