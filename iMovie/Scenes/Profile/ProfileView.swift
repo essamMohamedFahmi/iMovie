@@ -205,7 +205,7 @@ struct SegmentModifier: ViewModifier {
         content
             .font(.iMovieMedium(20))
             .foregroundColor(.white)
-            .padding([.top,.bottom], 10)
-            .padding([.leading,.trailing], 20)
+            .padding([.top, .bottom], 10)
+            .padding([.leading, .trailing], 20)
     }
 }
