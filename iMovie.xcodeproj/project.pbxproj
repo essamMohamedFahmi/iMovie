@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D0E2EE3277E034900640FFA /* View+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E2EE2277E034900640FFA /* View+App.swift */; };
 		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
+		1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE12783A1F2006779D5 /* LoginView.swift */; };
 		1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */; };
 		1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */; };
 		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		1D0E2EE2277E034900640FFA /* View+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+App.swift"; sourceTree = "<group>"; };
 		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1DB0AFE12783A1F2006779D5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB0AFE02783A1F2006779D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1DB0AFE12783A1F2006779D5 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1DBD0AB3277B43AA00DC82C4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		CEC522222778B88C00F76DEA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1DB0AFE02783A1F2006779D5 /* Login */,
 				1DDAA3502778FEE300BDAE2B /* Profile */,
 				CEC522232778B8A200F76DEA /* Splash */,
 			);
@@ -376,6 +387,7 @@
 				1D0E2EE3277E034900640FFA /* View+App.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
+				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
