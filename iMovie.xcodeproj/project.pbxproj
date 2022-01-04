@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4471002784D5CE008E636B /* iMovieCardView.swift */; };
 		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
 		1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE12783A1F2006779D5 /* LoginView.swift */; };
 		1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE32783A335006779D5 /* View+Placeholder.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D4471002784D5CE008E636B /* iMovieCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMovieCardView.swift; sourceTree = "<group>"; };
 		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DB0AFE12783A1F2006779D5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DB0AFE32783A335006779D5 /* View+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		CE96BA992778C14F00CB7C08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D4471002784D5CE008E636B /* iMovieCardView.swift */,
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
 				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
 			);
@@ -386,6 +389,7 @@
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
+				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
