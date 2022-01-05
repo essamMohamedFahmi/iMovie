@@ -12,9 +12,11 @@ struct RatingCircle: View {
     // MARK: - Properties
     
     @State private var isLoading = false
-    @State private var progress: CGFloat = 0.86
     
+    var rate: CGFloat
     var rateColor: Color
+    
+    // MARK: - Body
     
     var body: some View {
         ZStack {
@@ -23,7 +25,7 @@ struct RatingCircle: View {
                 .frame(width: 60, height: 60)
             
             HStack(spacing: 0) {
-                Text("\(Int(progress * 100))")
+                Text("\(Int(rate * 100))")
                     .font(.iMovieBold(15))
                     .foregroundColor(.white)
                     .overlay(
@@ -39,7 +41,7 @@ struct RatingCircle: View {
                 .frame(width: 50, height: 50)
             
             Circle()
-                .trim(from: 0, to: isLoading ? progress : 0)
+                .trim(from: 0, to: isLoading ? rate : 0)
                 .stroke(rateColor, lineWidth: 3)
                 .frame(width: 50, height: 50)
                 .rotationEffect(Angle(degrees: -90))
@@ -51,9 +53,8 @@ struct RatingCircle: View {
     }
 }
 
-
 struct RatingCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingCircle(rateColor: .green)
+        RatingCircle(rate: 0.86, rateColor: .green)
     }
 }

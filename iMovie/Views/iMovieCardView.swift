@@ -15,6 +15,9 @@ struct iMovieCardView: View {
     var movieTitle: String
     var movieReleaseDate: String
     var rateColor: Color
+    var rate: CGFloat
+    
+    // MARK: - Body
     
     var body: some View {
         ZStack {
@@ -44,7 +47,7 @@ struct iMovieCardView: View {
                 }
             }
             
-            RatingCircle(rateColor: rateColor)
+            RatingCircle(rate: rate , rateColor: rateColor)
                 .offset(x: -30, y: 75)
         }
     }
@@ -55,9 +58,7 @@ struct iMovieCardView_Previews: PreviewProvider {
         iMovieCardView(moviePoster: "MoviePoster",
                        movieTitle: "The Good Doctor",
                        movieReleaseDate: "Sep 25,2017",
-                       rateColor: .iMovieRose)
+                       rateColor: .iMovieRose,
+                       rate: 0.86)
     }
 }
-
-
-
