@@ -12,30 +12,27 @@ struct ProfileView: View {
     // MARK: - Body
     
     var body: some View {
-        ZStack {
-            BackgroundView()
-            
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Profile")
-                        .font(.iMovieBold(40))
-                        .foregroundColor(.white)
-                        .padding()
+        NavigationView {
+            ZStack {
+                BackgroundView()
+                
+                VStack(alignment: .leading) {
+                    ProfileInfo(profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary", profileCaption: "Type what in your Mind...?", profileFollowersCount: 420, profileFollowingCount: 1992)
+                        .padding(.bottom, 10)
+                    
+                    ScrollView(.vertical) {
+                        ProfileSegmentOne()
+
+                        ProfileSegmentTwo()
+                        
+                        ProfileSegmentThree()
+                    }
                     
                     Spacer()
                 }
-                
-                ProfileInfo(profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary", profileCaption: "Type what in your Mind...?", profileFollowersCount: 420, profileFollowingCount: 1992)
-                    .padding(.bottom, 40)
-                
-                VStack {
-                    ProfileSegmentOne()
-                    ProfileSegmentTwo()
-                    ProfileSegmentThree()
-                }
-                
-                Spacer(minLength: 50)
             }
+            .navigationTitle("Profile")
+            .navigationBarTitleDisplayMode(.large)
         }
     }
 }
@@ -58,7 +55,7 @@ struct BackgroundView: View {
             
             LinearGradient(gradient: Gradient(colors: [Color.iMovieDarkBlue, Color.iMovieBlue]), startPoint: .top, endPoint: .bottom)
                 .opacity(0.7)
-
+            
             VisualEffectView(effect: UIBlurEffect(style: .dark))
         }
         .edgesIgnoringSafeArea(.vertical)
@@ -93,7 +90,7 @@ struct ProfileInfo: View {
                         .font(.iMovieRegular(15))
                         .foregroundColor(Color.iMovieRose)
                 }
-
+                
                 HStack(spacing: 10) {
                     VStack(alignment: .leading, spacing:10) {
                         Text("\(profileFollowersCount)")
@@ -128,26 +125,23 @@ struct ProfileSegmentOne: View {
                 .opacity(0.3)
             
             VStack(alignment: .leading, spacing: 10) {
-                Button("Your Favorite") {
-                }
-
-                Rectangle()
-                    .frame(maxWidth: .infinity, maxHeight: 2)
-                    .opacity(0.5)
-                
-                Button("Share Your Profile") {
-                }
+                Button("Your Favorite") {}
                 
                 Rectangle()
                     .frame(maxWidth: .infinity, maxHeight: 2)
                     .opacity(0.5)
                 
-                Button("Rate Us") {
-                }
+                Button("Share Your Profile") {}
+                
+                Rectangle()
+                    .frame(maxWidth: .infinity, maxHeight: 2)
+                    .opacity(0.5)
+                
+                Button("Rate Us") {}
             }
             .modifier(SegmentModifier())
         }
-        .frame(height: 130)
+        .frame(height: 150)
     }
 }
 
@@ -155,7 +149,8 @@ struct ProfileSegmentOne: View {
 
 struct ProfileSegmentTwo: View {
     
-    @State var flag: Bool = true
+    @State var profileIsHidden: Bool = true
+    @State var notices: Bool = false
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -163,17 +158,19 @@ struct ProfileSegmentTwo: View {
                 .opacity(0.3)
             
             VStack(alignment: .leading, spacing: 10) {
-                Toggle(isOn: $flag) {
+                Toggle(isOn: $profileIsHidden) {
                     Text("Hide your Profile")
                 }
+                .tint(.iMovieRose)
                 
-                Toggle(isOn: $flag) {
+                Toggle(isOn: $notices) {
                     Text("Notices")
                 }
+                .tint(.iMovieRose)
             }
             .modifier(SegmentModifier())
         }
-        .frame(height: 90)
+        .frame(height: 100)
     }
 }
 
@@ -196,7 +193,7 @@ struct ProfileSegmentThree: View {
             }
             .modifier(SegmentModifier())
         }
-        .frame(height: 90)
+        .frame(height: 100)
     }
 }
 
