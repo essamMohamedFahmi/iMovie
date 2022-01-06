@@ -22,9 +22,7 @@ struct ProfileView: View {
                     
                     ScrollView(.vertical) {
                         ProfileSegmentOne()
-
                         ProfileSegmentTwo()
-                        
                         ProfileSegmentThree()
                     }
                     
