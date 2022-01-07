@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D0E2EE3277E034900640FFA /* View+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E2EE2277E034900640FFA /* View+App.swift */; };
+
+		1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */; };
+		1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4471002784D5CE008E636B /* iMovieCardView.swift */; };
+		1D04BB04278466E100C3B561 /* UINavigationController+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D04BB03278466E100C3B561 /* UINavigationController+Appearance.swift */; };
 		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
+		1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE12783A1F2006779D5 /* LoginView.swift */; };
+		1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE32783A335006779D5 /* View+Placeholder.swift */; };
 		1DBD0AB8277B44B300DC82C4 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */; };
 		1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */; };
 		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
@@ -37,8 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D0E2EE2277E034900640FFA /* View+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+App.swift"; sourceTree = "<group>"; };
+
+		1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCircleView.swift; sourceTree = "<group>"; };
+		1D4471002784D5CE008E636B /* iMovieCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMovieCardView.swift; sourceTree = "<group>"; };
+		1D04BB03278466E100C3B561 /* UINavigationController+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Appearance.swift"; sourceTree = "<group>"; };
 		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1DB0AFE12783A1F2006779D5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1DB0AFE32783A335006779D5 /* View+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
 		1DBD0AB4277B44B300DC82C4 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
@@ -82,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB0AFE02783A1F2006779D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1DB0AFE12783A1F2006779D5 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1DBD0AB3277B43AA00DC82C4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +133,11 @@
 		1DDAA3562779090900BDAE2B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1DB0AFE32783A335006779D5 /* View+Placeholder.swift */,
 				1DDAA3572779095000BDAE2B /* Color+App.swift */,
 				1DBD99AE277B58C600CD080A /* Fonts+App.swift */,
 				1D0E2EE2277E034900640FFA /* View+App.swift */,
-				CE2E85BB2783332900A25FDE /* View+Placeholder.swift */,
+				1D04BB03278466E100C3B561 /* UINavigationController+Appearance.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,8 +191,10 @@
 		CE96BA992778C14F00CB7C08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1D4471002784D5CE008E636B /* iMovieCardView.swift */,
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
 				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
+				1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,7 +221,7 @@
 		CEC522222778B88C00F76DEA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CE2E85B82783290400A25FDE /* Login */,
+				1DB0AFE02783A1F2006779D5 /* Login */,
 				1DDAA3502778FEE300BDAE2B /* Profile */,
 				CEC522232778B8A200F76DEA /* Splash */,
 			);
@@ -382,16 +403,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D04BB04278466E100C3B561 /* UINavigationController+Appearance.swift in Sources */,
 				1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */,
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
-				CE2E85BC2783332900A25FDE /* View+Placeholder.swift in Sources */,
 				1D0E2EE3277E034900640FFA /* View+App.swift in Sources */,
+				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
+				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
+				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
-				CE2E85BA2783291B00A25FDE /* LoginView.swift in Sources */,
+				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
