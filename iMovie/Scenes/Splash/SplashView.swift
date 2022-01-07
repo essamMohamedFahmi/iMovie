@@ -20,13 +20,16 @@ struct SplashView: View {
     // MARK: - Body
 
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Color.iMovieRose, Color.iMovieDarkBlue]), startPoint: .top, endPoint: .bottom)
-            .edgesIgnoringSafeArea(.vertical)
-            .overlay(
-                LottieView(name: Strings.spalshAnimationFileName)
-                    .offset(y: -20)
-            )
-            .task { await delay() }
+        LinearGradient(
+            gradient: Gradient(colors: [Color.iMovieRose, Color.iMovieDarkBlue]), startPoint: .top,
+            endPoint: .bottom
+        )
+        .edgesIgnoringSafeArea(.vertical)
+        .overlay(
+            LottieView(name: Strings.spalshAnimationFileName)
+                .offset(y: -20)
+        )
+        .task { await delay() }
     }
 
     private func delay() async {

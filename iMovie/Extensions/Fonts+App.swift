@@ -8,9 +8,9 @@
 import SwiftUI
 
 extension Font {
-    
+
     // MARK: - Methods
-    
+
     static func iMovieBold(_ size: CGFloat) -> Font {
         Font.custom("Poppins Bold", size: size)
     }

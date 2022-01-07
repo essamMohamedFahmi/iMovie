@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct RatingCircle: View {
-    
+
     // MARK: - Properties
-    
+
     @State private var isLoading = false
-    
+
     var rate: CGFloat
     var rateColor: Color
-    
+
     // MARK: - Body
-    
+
     var body: some View {
         ZStack {
             Circle()
                 .foregroundColor(.black)
                 .frame(width: 60, height: 60)
-            
+
             HStack(spacing: 0) {
                 Text("\(Int(rate * 100))")
                     .font(.iMovieBold(15))
@@ -35,11 +35,11 @@ struct RatingCircle: View {
                             .offset(x: 12, y: -6))
             }
             .padding()
-            
+
             Circle()
                 .stroke(rateColor.opacity(0.6), lineWidth: 5)
                 .frame(width: 50, height: 50)
-            
+
             Circle()
                 .trim(from: 0, to: isLoading ? rate : 0)
                 .stroke(rateColor, lineWidth: 3)

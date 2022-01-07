@@ -36,7 +36,9 @@ struct LoginView: View {
                 VStack(spacing: 30) {
                     FancyTextField(header: "Email", placeholder: "Enter your email", text: $email)
 
-                    FancyTextField(header: "Password", placeholder: "Enter your password", text: $password, imageName: "eye.fill")
+                    FancyTextField(
+                        header: "Password", placeholder: "Enter your password", text: $password,
+                        imageName: "eye.fill")
                 }
                 .padding(30)
 
@@ -65,11 +67,11 @@ struct FancyTextField: View {
 
             HStack {
                 TextField("", text: $text)
-                  .padding([.trailing, .leading], 20)
-                  .padding([.top, .bottom], 15)
-                  .placeholder(placeholder, when: text.isEmpty)
-                  .font(.iMovieRegular(15))
-                  .foregroundColor(.white)
+                    .padding([.trailing, .leading], 20)
+                    .padding([.top, .bottom], 15)
+                    .placeholder(placeholder, when: text.isEmpty)
+                    .font(.iMovieRegular(15))
+                    .foregroundColor(.white)
 
                 if let imageName = imageName {
                     Image(systemName: imageName)
@@ -77,8 +79,9 @@ struct FancyTextField: View {
                         .padding([.trailing], 15)
                 }
             }
-            .overlay(RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color.white, lineWidth: 1))
+            .overlay(
+                RoundedRectangle(cornerRadius: 25)
+                    .stroke(Color.white, lineWidth: 1))
         }
     }
 }

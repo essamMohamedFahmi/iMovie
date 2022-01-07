@@ -5,8 +5,8 @@
 //  Created by Essam Fahmi on 26/12/2021.
 //
 
-import SwiftUI
 import Lottie
+import SwiftUI
 
 struct LottieView: UIViewRepresentable {
 
@@ -31,7 +31,7 @@ struct LottieView: UIViewRepresentable {
         view.addSubview(animationView)
         NSLayoutConstraint.activate([
             animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
-            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor),
         ])
 
         return view
