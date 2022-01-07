@@ -32,6 +32,8 @@
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
 		CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96BA9A2778C19B00CB7C08 /* LottieView.swift */; };
+		CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806DF2788D11600207F38 /* GradientBackground.swift */; };
+		CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E22788D22F00207F38 /* FancyTextField.swift */; };
 		CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF85F632777A82B00517ED7 /* iMovieApp.swift */; };
 		CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF85F652777A82B00517ED7 /* SplashView.swift */; };
 		CEF85F682777A82D00517ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF85F672777A82D00517ED7 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		CE96BA952778C13200CB7C08 /* splash_iMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_iMovie.json; sourceTree = "<group>"; };
 		CE96BA962778C13200CB7C08 /* watch_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = watch_movie.json; sourceTree = "<group>"; };
 		CE96BA9A2778C19B00CB7C08 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CEC806DF2788D11600207F38 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		CEC806E22788D22F00207F38 /* FancyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 		CEF85F602777A82B00517ED7 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF85F632777A82B00517ED7 /* iMovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieApp.swift; sourceTree = "<group>"; };
 		CEF85F652777A82B00517ED7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
 				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
 				1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */,
+				CEC806E22788D22F00207F38 /* FancyTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +226,22 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		CEC806DE2788D0ED00207F38 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CEC806E12788D12E00207F38 /* Button */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		CEC806E12788D12E00207F38 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				CEC806DF2788D11600207F38 /* GradientBackground.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		CEF85F572777A82B00517ED7 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +263,7 @@
 		CEF85F622777A82B00517ED7 /* iMovie */ = {
 			isa = PBXGroup;
 			children = (
+				CEC806DE2788D0ED00207F38 /* Styles */,
 				CEC522212778B88000F76DEA /* App */,
 				1DC3DEE4277B9CA70035226A /* Supporting Files */,
 				CEC5221F2778B85A00F76DEA /* Resources */,
@@ -362,7 +384,7 @@
 		};
 		CEC806DD2788C0BC00207F38 /* Swift Format */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -376,7 +398,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swift-format >/dev/null; then\n    swift-format -m format -i --configuration swiftFormatConfiguration.json -r ${PROJECT_DIR}\nelse\n    echo \"warning: swift-format not installed\"\nfi\n";
+			shellScript = "if [ $ENABLE_PREVIEWS == \"NO\" ]\nthen\n  if which swift-format >/dev/null; then\n    swift-format -m format -i --configuration swiftFormatConfiguration.json -r ${PROJECT_DIR}\nelse\n    echo \"warning: swift-format not installed\"\nfi\nelse\n  echo \"Skipping the script because of preview mode\"\nfi\n";
 		};
 		E4B4420BE13FFF60B9849D77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -412,6 +434,8 @@
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
+				CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */,
+				CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,

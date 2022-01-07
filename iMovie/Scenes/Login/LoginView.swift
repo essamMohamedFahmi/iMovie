@@ -42,46 +42,15 @@ struct LoginView: View {
                 }
                 .padding(30)
 
+                Button(action: {}) {
+                    Text("Sign In")
+                        .font(.iMovieRegular(20))
+                        .foregroundColor(.white)
+                }
+                .buttonStyle(GradientBackground(height: 55))
+
                 Spacer()
             }
-        }
-    }
-}
-
-struct FancyTextField: View {
-
-    // MARK: - Properties
-
-    var header: String
-    var placeholder: String
-    @Binding var text: String
-    var imageName: String?
-
-    // MARK: - Body
-
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(header)
-                .font(.iMovieRegular(15))
-                .foregroundColor(.iMovieRose)
-
-            HStack {
-                TextField("", text: $text)
-                    .padding([.trailing, .leading], 20)
-                    .padding([.top, .bottom], 15)
-                    .placeholder(placeholder, when: text.isEmpty)
-                    .font(.iMovieRegular(15))
-                    .foregroundColor(.white)
-
-                if let imageName = imageName {
-                    Image(systemName: imageName)
-                        .foregroundColor(Color.white)
-                        .padding([.trailing], 15)
-                }
-            }
-            .overlay(
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(Color.white, lineWidth: 1))
         }
     }
 }
