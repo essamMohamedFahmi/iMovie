@@ -18,6 +18,35 @@ struct PasswordTextField: View {
     var placeholder = "Enter your password"
     var cornerRadius: CGFloat = 25
 
+    // MARK: - View Properties
+
+    private var textField: some View {
+        SecureField("", text: $text)
+            .padding([.trailing, .leading], 20)
+            .padding([.top, .bottom], 15)
+            .placeholder(placeholder, when: text.isEmpty)
+            .font(.iMovieRegular(15))
+            .foregroundColor(.white)
+    }
+
+    private var secureTextField: some View {
+        SecureField("", text: $text)
+            .padding([.trailing, .leading], 20)
+            .padding([.top, .bottom], 15)
+            .placeholder(placeholder, when: text.isEmpty)
+            .font(.iMovieRegular(15))
+            .foregroundColor(.white)
+    }
+
+    private var eyeImage: some View {
+        Image(systemName: isSecure ? "eye.slash.fill" : "eye.fill")
+            .foregroundColor(Color.white)
+            .padding([.trailing], 15)
+            .onTapGesture {
+                isSecure.toggle()
+            }
+    }
+
     // MARK: - Body
 
     var body: some View {
@@ -28,28 +57,13 @@ struct PasswordTextField: View {
 
             HStack {
                 if isSecure {
-                    SecureField("", text: $text)
-                        .padding([.trailing, .leading], 20)
-                        .padding([.top, .bottom], 15)
-                        .placeholder(placeholder, when: text.isEmpty)
-                        .font(.iMovieRegular(15))
-                        .foregroundColor(.white)
+                    secureTextField
                 }
                 else {
-                    TextField("", text: $text)
-                        .padding([.trailing, .leading], 20)
-                        .padding([.top, .bottom], 15)
-                        .placeholder(placeholder, when: text.isEmpty)
-                        .font(.iMovieRegular(15))
-                        .foregroundColor(.white)
+                    textField
                 }
 
-                Image(systemName: isSecure ? "eye.slash.fill" : "eye.fill")
-                    .foregroundColor(Color.white)
-                    .padding([.trailing], 15)
-                    .onTapGesture {
-                        isSecure.toggle()
-                    }
+                eyeImage
             }
             .overlay(
                 RoundedRectangle(cornerRadius: cornerRadius)
