@@ -6,11 +6,42 @@
 //
 
 import SwiftUI
+import SSToastMessage
 
 struct LoginView: View {
 
-    @State private var email = ""
-    @State private var password = ""
+    // MARK: - Properties
+
+    @ObservedObject private var loginViewModel = LoginViewModel()
+
+    // MARK: - View Components
+
+    private var credentialsFields: some View {
+        VStack(spacing: 30) {
+            FancyTextField(
+                header: "Username", placeholder: "Enter your username",
+                text: $loginViewModel.username)
+
+            FancyTextField(
+                header: "Password", placeholder: "Enter your password",
+                text: $loginViewModel.password,
+                imageName: "eye.fill")
+        }
+        .padding(30)
+    }
+
+    private var signInButton: some View {
+        Button(action: {
+            loginViewModel.login()
+        }) {
+            Text("Sign In")
+                .font(.iMovieRegular(20))
+                .foregroundColor(.white)
+        }
+        .buttonStyle(GradientBackground(height: 55))
+    }
+
+    // MARK: - Body
 
     var body: some View {
         ZStack {
@@ -33,25 +64,43 @@ struct LoginView: View {
                     .font(.iMovieBold(30))
                     .foregroundColor(.white)
 
-                VStack(spacing: 30) {
-                    FancyTextField(header: "Email", placeholder: "Enter your email", text: $email)
+                credentialsFields
 
-                    FancyTextField(
-                        header: "Password", placeholder: "Enter your password", text: $password,
-                        imageName: "eye.fill")
-                }
-                .padding(30)
-
-                Button(action: {}) {
-                    Text("Sign In")
-                        .font(.iMovieRegular(20))
-                        .foregroundColor(.white)
-                }
-                .buttonStyle(GradientBackground(height: 55))
+                signInButton
 
                 Spacer()
             }
         }
+        .fullScreenCover(
+            isPresented: $loginViewModel.shouldLogin,
+            content: ProfileView.init)
+        .present(isPresented: $loginViewModel.error, type: .toast, position: .top) {
+            self.createToast(with: loginViewModel.errorMessage)
+        }
+    }
+
+    // MARK: - Methods
+
+    func createToast(with message: String) -> some View {
+        VStack {
+            Spacer()
+
+            HStack {
+                Text(message)
+                    .font(.iMovieRegular(14))
+                    .foregroundColor(.white)
+                    .padding()
+
+                Spacer()
+            }
+        }
+        .frame(width: UIScreen.main.bounds.width, height: 85)
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.iMovieBlue, Color.iMoviePurpure]),
+                startPoint: .leading,
+                endPoint: .trailing)
+        )
     }
 }
 
