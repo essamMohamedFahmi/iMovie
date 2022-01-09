@@ -5,8 +5,8 @@
 //  Created by Essam Fahmi on 03/01/2022.
 //
 
-import SwiftUI
 import SSToastMessage
+import SwiftUI
 
 struct LoginView: View {
 
@@ -73,7 +73,8 @@ struct LoginView: View {
         }
         .fullScreenCover(
             isPresented: $loginViewModel.shouldLogin,
-            content: ProfileView.init)
+            content: ProfileView.init
+        )
         .present(isPresented: $loginViewModel.error, type: .toast, position: .top) {
             self.createToast(with: loginViewModel.errorMessage)
         }
