@@ -1,16 +1,20 @@
 PODS:
   - lottie-ios (3.2.3)
+  - SSToastMessage (1.0.0)
 
 DEPENDENCIES:
   - lottie-ios
+  - SSToastMessage
 
 SPEC REPOS:
   trunk:
     - lottie-ios
+    - SSToastMessage
 
 SPEC CHECKSUMS:
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  SSToastMessage: 36f6bb3175e78b3424a03946a6c3d2588b322e0a
 
-PODFILE CHECKSUM: 44bad2182e8873fd6dd337445eed4235a70a7179
+PODFILE CHECKSUM: 167088dbdea40b1377a3874dc64769be145142f0
 
 COCOAPODS: 1.10.2
