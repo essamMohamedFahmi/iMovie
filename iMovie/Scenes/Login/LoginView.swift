@@ -22,10 +22,7 @@ struct LoginView: View {
                 header: "Username", placeholder: "Enter your username",
                 text: $loginViewModel.username)
 
-            FancyTextField(
-                header: "Password", placeholder: "Enter your password",
-                text: $loginViewModel.password,
-                imageName: "eye.fill")
+            PasswordTextField(text: $loginViewModel.password, isSecure: true)
         }
         .padding(30)
     }

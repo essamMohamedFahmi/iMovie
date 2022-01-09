@@ -41,7 +41,8 @@ struct FancyTextField: View {
             }
             .overlay(
                 RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(Color.white, lineWidth: 1))
+                    .stroke(Color.white, lineWidth: 1)
+            )
         }
     }
 }
