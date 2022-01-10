@@ -21,8 +21,11 @@ struct NavigationBarView: View {
             Button {
             } label: {
                 Image(systemName: "text.justify")
+                    .resizable()
+                    .frame(width: 20, height: 20)
                     .font(.title)
                     .foregroundColor(.white)
+                    .padding(.leading, 5.0)
             }
 
             Spacer()
@@ -44,8 +47,11 @@ struct NavigationBarView: View {
                 self.showProfile = true
             } label: {
                 Image(systemName: "person")
+                    .resizable()
+                    .frame(width: 20, height: 20)
                     .font(.title)
                     .foregroundColor(.white)
+                    .padding(.trailing, 5.0)
             }
             .fullScreenCover(
                 isPresented: $showProfile,

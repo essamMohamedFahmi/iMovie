@@ -135,12 +135,12 @@ struct PickerSelector: View {
         VStack(alignment: .center, spacing: 5) {
             Text(title)
                 .font(.iMovieBold(15))
-                .foregroundColor(isSelected ? .iMovieBlue : .white)
+                .foregroundColor(isSelected ? .iMovieBlue : .gray)
 
             Rectangle()
                 .frame(height: 2, alignment: .center)
                 .foregroundColor(.iMovieBlue)
-                .foregroundColor(isSelected ? .iMovieBlue : .white)
+                .foregroundColor(isSelected ? .iMovieBlue : .gray)
                 .opacity(isSelected ? 1 : 0)
         }
         .frame(minWidth: 0, maxWidth: .infinity)

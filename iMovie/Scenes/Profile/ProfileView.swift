@@ -30,9 +30,12 @@ struct ProfileView: View {
                     Button {
                         presentationMode.wrappedValue.dismiss()
                     } label: {
-                        Image(systemName: "arrowshape.turn.up.right")
+                        Image(systemName: "xmark")
+                            .resizable()
+                            .frame(width: 20, height: 20)
                             .font(.title)
                             .foregroundColor(.white)
+                            .padding(.trailing, 5)
                     }
                 }
                 .padding([.leading, .trailing], 20)

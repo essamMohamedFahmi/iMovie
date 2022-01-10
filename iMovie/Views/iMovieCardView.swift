@@ -40,6 +40,7 @@ struct iMovieCardView: View {
                 VStack(alignment: .leading) {
                     Text(movieTitle)
                         .font(.iMovieBold(15))
+                        .foregroundColor(.iMovieBlue)
                         .lineLimit(3)
                         .minimumScaleFactor(0.5)
 
