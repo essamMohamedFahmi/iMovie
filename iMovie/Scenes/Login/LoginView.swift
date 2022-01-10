@@ -5,8 +5,8 @@
 //  Created by Essam Fahmi on 03/01/2022.
 //
 
-import SwiftUI
 import SSToastMessage
+import SwiftUI
 
 struct LoginView: View {
 
@@ -15,6 +15,24 @@ struct LoginView: View {
     @ObservedObject private var loginViewModel = LoginViewModel()
 
     // MARK: - View Components
+
+    private var mainTitle: some View {
+        VStack {
+            Text("iMovie")
+                .font(.iMovieBold(50))
+                .foregroundColor(.white)
+
+            Text("Place of entertainment")
+                .font(.iMovieLight(15))
+                .foregroundColor(.white)
+        }
+    }
+
+    private var signInToMovie: some View {
+        Text("Sign In To Movie")
+            .font(.iMovieBold(30))
+            .foregroundColor(.white)
+    }
 
     private var credentialsFields: some View {
         VStack(spacing: 30) {
@@ -47,19 +65,11 @@ struct LoginView: View {
             VStack {
                 Spacer()
 
-                Text("iMovie")
-                    .font(.iMovieBold(50))
-                    .foregroundColor(.white)
-
-                Text("Place of entertainment")
-                    .font(.iMovieLight(15))
-                    .foregroundColor(.white)
+                mainTitle
 
                 Spacer()
 
-                Text("Sign In To Movie")
-                    .font(.iMovieBold(30))
-                    .foregroundColor(.white)
+                signInToMovie
 
                 credentialsFields
 
@@ -70,7 +80,8 @@ struct LoginView: View {
         }
         .fullScreenCover(
             isPresented: $loginViewModel.shouldLogin,
-            content: ProfileView.init)
+            content: HomeView.init
+        )
         .present(isPresented: $loginViewModel.error, type: .toast, position: .top) {
             self.createToast(with: loginViewModel.errorMessage)
         }

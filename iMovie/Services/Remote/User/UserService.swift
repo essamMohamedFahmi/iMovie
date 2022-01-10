@@ -29,7 +29,7 @@ final class UserService: UserServiceProtocol {
 
     func login(username: String, password: String) -> AnyPublisher<User, Error> {
         Future<User, Error> { promise in
-            if username == "essam" && password == "root" {
+            if username == "" && password == "" {
                 promise(.success(User(username: "essam", email: "essam@gmail.com")))
             } else {
                 promise(.failure(AuthError()))

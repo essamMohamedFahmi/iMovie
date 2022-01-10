@@ -58,8 +58,7 @@ struct PasswordTextField: View {
             HStack {
                 if isSecure {
                     secureTextField
-                }
-                else {
+                } else {
                     textField
                 }
 
