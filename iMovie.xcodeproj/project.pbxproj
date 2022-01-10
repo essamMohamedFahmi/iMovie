@@ -11,7 +11,7 @@
 		1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */; };
 		1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4471002784D5CE008E636B /* iMovieCardView.swift */; };
 		1D8565DC278B26F9003B529A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8565DB278B26F9003B529A /* HomeView.swift */; };
-		1D8565DE278B3FA2003B529A /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8565DD278B3FA2003B529A /* ViewRouter.swift */; };
+		1D8565DE278B3FA2003B529A /* PageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8565DD278B3FA2003B529A /* PageRouter.swift */; };
 		1DAF2AF52779F0F6003B10C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF2AF42779F0F6003B10C7 /* Images.xcassets */; };
 		1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE12783A1F2006779D5 /* LoginView.swift */; };
 		1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB0AFE32783A335006779D5 /* View+Placeholder.swift */; };
@@ -36,6 +36,7 @@
 		CE96BA972778C13200CB7C08 /* splash_iMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA952778C13200CB7C08 /* splash_iMovie.json */; };
 		CE96BA982778C13200CB7C08 /* watch_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = CE96BA962778C13200CB7C08 /* watch_movie.json */; };
 		CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE96BA9A2778C19B00CB7C08 /* LottieView.swift */; };
+		CEC3F16E278BB421006588FE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3F16D278BB421006588FE /* TabBarIcon.swift */; };
 		CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806DF2788D11600207F38 /* GradientBackground.swift */; };
 		CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E22788D22F00207F38 /* FancyTextField.swift */; };
 		CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF85F632777A82B00517ED7 /* iMovieApp.swift */; };
@@ -52,7 +53,7 @@
 		1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCircleView.swift; sourceTree = "<group>"; };
 		1D4471002784D5CE008E636B /* iMovieCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMovieCardView.swift; sourceTree = "<group>"; };
 		1D8565DB278B26F9003B529A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		1D8565DD278B3FA2003B529A /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		1D8565DD278B3FA2003B529A /* PageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRouter.swift; sourceTree = "<group>"; };
 		1DAF2AF42779F0F6003B10C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DB0AFE12783A1F2006779D5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1DB0AFE32783A335006779D5 /* View+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Placeholder.swift"; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		CE96BA952778C13200CB7C08 /* splash_iMovie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splash_iMovie.json; sourceTree = "<group>"; };
 		CE96BA962778C13200CB7C08 /* watch_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = watch_movie.json; sourceTree = "<group>"; };
 		CE96BA9A2778C19B00CB7C08 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CEC3F16D278BB421006588FE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
 		CEC806DF2788D11600207F38 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		CEC806E22788D22F00207F38 /* FancyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 		CEF85F602777A82B00517ED7 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,8 +105,8 @@
 		1D8565DA278B26E3003B529A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1D8565DB278B26F9003B529A /* HomeView.swift */,
-				1D8565DD278B3FA2003B529A /* ViewRouter.swift */,
+				CEC3F171278BB468006588FE /* Router */,
+				CEC3F16C278BB400006588FE /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -224,6 +226,23 @@
 				CEFC36CD278A480F00BB42A7 /* PasswordTextField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CEC3F16C278BB400006588FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D8565DB278B26F9003B529A /* HomeView.swift */,
+				CEC3F16D278BB421006588FE /* TabBarIcon.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEC3F171278BB468006588FE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1D8565DD278B3FA2003B529A /* PageRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		CEC5221F2778B85A00F76DEA /* Resources */ = {
@@ -479,6 +498,7 @@
 				1D04BB04278466E100C3B561 /* UINavigationController+Appearance.swift in Sources */,
 				1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */,
 				CEFC36CE278A480F00BB42A7 /* PasswordTextField.swift in Sources */,
+				CEC3F16E278BB421006588FE /* TabBarIcon.swift in Sources */,
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
 				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
 				CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */,
@@ -488,7 +508,7 @@
 				CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */,
 				1D8565DC278B26F9003B529A /* HomeView.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
-				1D8565DE278B3FA2003B529A /* ViewRouter.swift in Sources */,
+				1D8565DE278B3FA2003B529A /* PageRouter.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
@@ -633,7 +653,6 @@
 				INFOPLIST_FILE = "iMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -665,7 +684,6 @@
 				INFOPLIST_FILE = "iMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
