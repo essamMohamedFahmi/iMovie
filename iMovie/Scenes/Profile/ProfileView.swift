@@ -9,32 +9,49 @@ import SwiftUI
 
 struct ProfileView: View {
 
+    // MARK: - Properties
+
+    @Environment(\.presentationMode) var presentationMode
+
     // MARK: - Body
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                BackgroundView()
+        ZStack {
+            BackgroundView()
 
-                VStack(alignment: .leading) {
-                    ProfileInfo(
-                        profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary",
-                        profileCaption: "Type what in your Mind...?", profileFollowersCount: 420,
-                        profileFollowingCount: 1992
-                    )
-                    .padding(.bottom, 10)
-
-                    ScrollView(.vertical) {
-                        ProfileSegmentOne()
-                        ProfileSegmentTwo()
-                        ProfileSegmentThree()
-                    }
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Profile")
+                        .font(.iMovieBold(30))
+                        .foregroundColor(.white)
 
                     Spacer()
+
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "arrowshape.turn.up.right")
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
                 }
+                .padding([.leading, .trailing], 20)
+
+                ProfileInfo(
+                    profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary",
+                    profileCaption: "Type what in your Mind...?", profileFollowersCount: 420,
+                    profileFollowingCount: 1992
+                )
+                .padding(.bottom, 10)
+
+                ScrollView(.vertical) {
+                    ProfileSegmentOne()
+                    ProfileSegmentTwo()
+                    ProfileSegmentThree()
+                }
+
+                Spacer()
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.large)
         }
     }
 }
