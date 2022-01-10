@@ -44,70 +44,72 @@ struct ContentPickerView: View {
             .padding()
             .frame(minWidth: 0, maxWidth: .infinity)
 
-            switch contentType {
-            case .popural:
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                    }
-                    .padding([.bottom, .leading], 10)
-                }
-            case .new:
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                    }
-                    .padding([.bottom, .leading], 10)
-                }
-            case .soon:
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                    }
-                    .padding([.bottom, .leading], 10)
-                }
-            case .trailer:
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 15) {
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                        iMovieCardView(
-                            moviePoster: "MoviePoster", movieTitle: "The good doctor",
-                            movieReleaseDate: "Jan 26, 2017", rateColor: .iMoviePurpure, rate: 0.75)
-                    }
-                    .padding([.bottom, .leading], 10)
-                }
-            }
+            currentSelector()
         }
         .background(.clear)
+    }
+
+    // MARK: - Private Methods
+
+    @ViewBuilder
+    private func currentSelector() -> some View {
+        switch contentType {
+        case .popural:
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0...10, id: \.self) { card in
+                        iMovieCardView(
+                            moviePoster: "MoviePoster",
+                            movieTitle: "The good doctor",
+                            movieReleaseDate: "Jan 26, 2017",
+                            rateColor: .iMoviePurpure, rate: 0.75)
+                    }
+                }
+                .padding([.bottom, .leading], 10)
+            }
+
+        case .new:
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0...10, id: \.self) { card in
+                        iMovieCardView(
+                            moviePoster: "MoviePoster",
+                            movieTitle: "The good doctor",
+                            movieReleaseDate: "Jan 26, 2017",
+                            rateColor: .iMoviePurpure, rate: 0.75)
+                    }
+                }
+                .padding([.bottom, .leading], 10)
+            }
+
+        case .soon:
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0...10, id: \.self) { card in
+                        iMovieCardView(
+                            moviePoster: "MoviePoster",
+                            movieTitle: "The good doctor",
+                            movieReleaseDate: "Jan 26, 2017",
+                            rateColor: .iMoviePurpure, rate: 0.75)
+                    }
+                }
+                .padding([.bottom, .leading], 10)
+            }
+
+        case .trailer:
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 15) {
+                    ForEach(0...10, id: \.self) { card in
+                        iMovieCardView(
+                            moviePoster: "MoviePoster",
+                            movieTitle: "The good doctor",
+                            movieReleaseDate: "Jan 26, 2017",
+                            rateColor: .iMoviePurpure, rate: 0.75)
+                    }
+                }
+                .padding([.bottom, .leading], 10)
+            }
+        }
     }
 }
 
@@ -122,11 +124,12 @@ struct iMoviePickerView_Previews: PreviewProvider {
 
 struct PickerSelector: View {
 
-    //MARK: - Properties
+    // MARK: - Properties
+
     var title: String
     var isSelected: Bool = false
 
-    //MARK: - Body
+    // MARK: - Body
 
     var body: some View {
         VStack(alignment: .center, spacing: 5) {
