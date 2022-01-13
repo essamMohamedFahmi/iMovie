@@ -92,11 +92,15 @@ struct BackgroundView: View {
 
 struct ProfileInfo: View {
 
+    // MARK: - Properties
+
     var profileImage: String
     var profileName: String
     var profileCaption: String
     var profileFollowersCount: Int
     var profileFollowingCount: Int
+
+    // MARK: - Body
 
     var body: some View {
         HStack(spacing: 30) {
