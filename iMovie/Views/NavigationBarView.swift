@@ -14,23 +14,7 @@ struct NavigationBarView: View {
     @State private var logoAnimated: Bool = false
     @State private var showProfile: Bool = false
     
-    // MARK: - Body
-    
-    var body: some View {
-        HStack {
-            hamburgerMenuButton
-            
-            Spacer()
-            
-            navLogo
-            
-            Spacer()
-            
-            showProfileButton
-        }
-    }
-    
-    // MARK: - Private Properties
+    // MARK: - View Components
     
     private var hamburgerMenuButton: some View {
         Button {
@@ -71,6 +55,22 @@ struct NavigationBarView: View {
         .fullScreenCover(
             isPresented: $showProfile,
             content: ProfileView.init)
+    }
+    
+    // MARK: - Body
+    
+    var body: some View {
+        HStack {
+            hamburgerMenuButton
+            
+            Spacer()
+            
+            navLogo
+            
+            Spacer()
+            
+            showProfileButton
+        }
     }
 }
 

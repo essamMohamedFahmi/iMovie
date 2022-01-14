@@ -9,6 +9,14 @@ import SwiftUI
 
 struct MoviesView: View {
 
+    // MARK: - Properties
+
+    var topSafeAreaInsets: CGFloat {
+        guard let key = UIApplication.shared.windows.first?.safeAreaInsets.top else { return 5.0 }
+
+        return key + 10.0
+    }
+
     // MARK: - Body
 
     var body: some View {
@@ -17,7 +25,7 @@ struct MoviesView: View {
                 NavigationBarView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
-                    .padding(.top, topSafeAreaInsets())
+                    .padding(.top, topSafeAreaInsets)
                     .background(.clear)
 
                 Spacer()
@@ -26,14 +34,6 @@ struct MoviesView: View {
             }
         }
         .ignoresSafeArea(.all, edges: .top)
-    }
-
-    // MARK: - Private Methods
-
-    private func topSafeAreaInsets() -> CGFloat {
-        guard let key = UIApplication.shared.windows.first?.safeAreaInsets.top else { return 5.0 }
-
-        return key + 10.0
     }
 }
 
