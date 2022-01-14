@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct NavigationBarView: View {
-    
+
     // MARK: - Properties
-    
+
     @State private var logoAnimated: Bool = false
     @State private var showProfile: Bool = false
-    
+
     // MARK: - View Components
-    
+
     private var hamburgerMenuButton: some View {
         Button {
         } label: {
@@ -27,7 +27,7 @@ struct NavigationBarView: View {
                 .padding(.leading, 5.0)
         }
     }
-    
+
     private var navLogo: some View {
         Text("Movie")
             .opacity(logoAnimated ? 1 : 0)
@@ -40,7 +40,7 @@ struct NavigationBarView: View {
                 }
             }
     }
-    
+
     private var showProfileButton: some View {
         Button {
             self.showProfile = true
@@ -56,19 +56,19 @@ struct NavigationBarView: View {
             isPresented: $showProfile,
             content: ProfileView.init)
     }
-    
+
     // MARK: - Body
-    
+
     var body: some View {
         HStack {
             hamburgerMenuButton
-            
+
             Spacer()
-            
+
             navLogo
-            
+
             Spacer()
-            
+
             showProfileButton
         }
     }

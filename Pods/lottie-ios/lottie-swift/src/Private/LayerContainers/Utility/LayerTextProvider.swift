@@ -9,15 +9,15 @@ import Foundation
 
 /// Connects a LottieTextProvider to a group of text layers
 final class LayerTextProvider {
-    
+
     var textProvider: AnimationTextProvider {
         didSet {
             reloadTexts()
         }
     }
-    
+
     fileprivate(set) var textLayers: [TextCompositionLayer]
-    
+
     init(textProvider: AnimationTextProvider) {
         self.textProvider = textProvider
         self.textLayers = []
@@ -27,7 +27,7 @@ final class LayerTextProvider {
     func addTextLayers(_ layers: [TextCompositionLayer]) {
         textLayers += layers
     }
-        
+
     func reloadTexts() {
         textLayers.forEach {
             $0.textProvider = textProvider

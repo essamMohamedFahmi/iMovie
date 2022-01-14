@@ -22,13 +22,14 @@
 		1DBD0AB9277B44B300DC82C4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB5277B44B300DC82C4 /* Poppins-Bold.ttf */; };
 		1DBD0ABA277B44B300DC82C4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */; };
 		1DBD0ABB277B44B300DC82C4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */; };
-		1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD99AE277B58C600CD080A /* Fonts+App.swift */; };
+		1DBD99AF277B58C600CD080A /* Font+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBD99AE277B58C600CD080A /* Font+App.swift */; };
 		1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3512778FEF200BDAE2B /* ProfileView.swift */; };
 		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
 		1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* VisualEffectView.swift */; };
 		CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB442789101300E69190 /* LoginViewModel.swift */; };
 		CE01CB49278919D100E69190 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB48278919D100E69190 /* UserService.swift */; };
+		CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0260812792409800F725CC /* UIApplication+Windows.swift */; };
 		CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */; };
 		CE38F0A4277BB89600B148FC /* Daniel-Davis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */; };
 		CE38F0A6277BB8BA00B148FC /* Vonique-64.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */; };
@@ -66,7 +67,7 @@
 		1DBD0AB6277B44B300DC82C4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		1DBD0AB7277B44B300DC82C4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		1DBD99AB277B583D00CD080A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DBD99AE277B58C600CD080A /* Fonts+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+App.swift"; sourceTree = "<group>"; };
+		1DBD99AE277B58C600CD080A /* Font+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+App.swift"; sourceTree = "<group>"; };
 		1DDAA3512778FEF200BDAE2B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		C7C5ACE2C30C85000DD6DBBA /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
 		CE01CB442789101300E69190 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CE01CB48278919D100E69190 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CE0260812792409800F725CC /* UIApplication+Windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Windows.swift"; sourceTree = "<group>"; };
 		CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Art-Brewery.ttf"; sourceTree = "<group>"; };
 		CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Daniel-Davis.ttf"; sourceTree = "<group>"; };
 		CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vonique-64.ttf"; sourceTree = "<group>"; };
@@ -120,7 +122,7 @@
 		1D8BE067278C4AB700BE7624 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				1D8BE068278C4AFC00BE7624 /* MoviesView.swift */,
+				CE02608027923D2400F725CC /* View */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -169,8 +171,9 @@
 			children = (
 				1DB0AFE32783A335006779D5 /* View+Placeholder.swift */,
 				1DDAA3572779095000BDAE2B /* Color+App.swift */,
-				1DBD99AE277B58C600CD080A /* Fonts+App.swift */,
+				1DBD99AE277B58C600CD080A /* Font+App.swift */,
 				1D04BB03278466E100C3B561 /* UINavigationController+Appearance.swift */,
+				CE0260812792409800F725CC /* UIApplication+Windows.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,6 +219,15 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		CE02608027923D2400F725CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D8BE068278C4AFC00BE7624 /* MoviesView.swift */,
+				1D8BE065278C4A3500BE7624 /* CategoryPickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CE38F0AB277BD01200B148FC /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,7 +259,6 @@
 				CEC806E22788D22F00207F38 /* FancyTextField.swift */,
 				CEFC36CD278A480F00BB42A7 /* PasswordTextField.swift */,
 				1D8BE063278C497000BE7624 /* NavigationBarView.swift */,
-				1D8BE065278C4A3500BE7624 /* CategoryPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -520,7 +531,7 @@
 				1D8BE066278C4A3500BE7624 /* CategoryPickerView.swift in Sources */,
 				CEC3F16E278BB421006588FE /* TabBarIcon.swift in Sources */,
 				CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */,
-				1DBD99AF277B58C600CD080A /* Fonts+App.swift in Sources */,
+				1DBD99AF277B58C600CD080A /* Font+App.swift in Sources */,
 				CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */,
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
 				CE01CB49278919D100E69190 /* UserService.swift in Sources */,
@@ -533,6 +544,7 @@
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
 				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
 				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,
+				CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,

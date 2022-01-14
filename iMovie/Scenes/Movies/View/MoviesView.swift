@@ -11,11 +11,10 @@ struct MoviesView: View {
 
     // MARK: - Properties
 
-    var topSafeAreaInsets: CGFloat {
-        guard let key = UIApplication.shared.windows.first?.safeAreaInsets.top else { return 5.0 }
-
+    let topSafeAreaInset: CGFloat = {
+        guard let key = UIApplication.shared.keyWindow?.safeAreaInsets.top else { return 5.0 }
         return key + 10.0
-    }
+    }()
 
     // MARK: - Body
 
@@ -25,7 +24,7 @@ struct MoviesView: View {
                 NavigationBarView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
-                    .padding(.top, topSafeAreaInsets)
+                    .padding(.top, topSafeAreaInset)
                     .background(.clear)
 
                 Spacer()

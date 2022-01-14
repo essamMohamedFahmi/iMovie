@@ -14,12 +14,7 @@ enum MovieCategory: String, CaseIterable {
     case trailer
 
     var text: String {
-        switch self {
-        case .popural: return "Popural"
-        case .new: return "New"
-        case .soon: return "Soon"
-        case .trailer: return "Trailer"
-        }
+        self.rawValue.uppercased()
     }
 }
 
@@ -35,7 +30,7 @@ struct CategoryPickerView: View {
         VStack(alignment: .leading, spacing: 2) {
             HStack(spacing: 15) {
                 ForEach(MovieCategory.allCases, id: \.self) { type in
-                    PickerSelector(title: type.text.uppercased(), isSelected: contentType == type)
+                    PickerSelector(title: type.text, isSelected: contentType == type)
                         .onTapGesture {
                             contentType = type
                         }
@@ -52,22 +47,6 @@ struct CategoryPickerView: View {
     // MARK: - Private Methods
 
     @ViewBuilder
-    private func displayContent() -> some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 15) {
-                ForEach(0...10, id: \.self) { card in
-                    iMovieCardView(
-                        moviePoster: "MoviePoster",
-                        movieTitle: "The good doctor",
-                        movieReleaseDate: "Jan 26, 2017",
-                        rateColor: .iMoviePurpure, rate: 0.75)
-                }
-            }
-            .padding([.bottom, .leading], 10)
-        }
-    }
-
-    @ViewBuilder
     private func currentSelector() -> some View {
         switch contentType {
         case .popural:
@@ -81,6 +60,22 @@ struct CategoryPickerView: View {
 
         case .trailer:
             displayContent()
+        }
+    }
+
+    @ViewBuilder
+    private func displayContent() -> some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 15) {
+                ForEach(0...10, id: \.self) { card in
+                    iMovieCardView(
+                        moviePoster: "MoviePoster",
+                        movieTitle: "The good doctor",
+                        movieReleaseDate: "Jan 26, 2017",
+                        rateColor: .iMoviePurpure, rate: 0.75)
+                }
+            }
+            .padding([.bottom, .leading], 10)
         }
     }
 }

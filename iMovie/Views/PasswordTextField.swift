@@ -21,7 +21,7 @@ struct PasswordTextField: View {
     // MARK: - View Properties
 
     private var textField: some View {
-        SecureField("", text: $text)
+        TextField("", text: $text)
             .padding([.trailing, .leading], 20)
             .padding([.top, .bottom], 15)
             .placeholder(placeholder, when: text.isEmpty)
