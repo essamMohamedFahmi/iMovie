@@ -9,32 +9,52 @@ import SwiftUI
 
 struct ProfileView: View {
 
+    // MARK: - Properties
+
+    @Environment(\.presentationMode) var presentationMode
+
     // MARK: - Body
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                BackgroundView()
+        ZStack {
+            BackgroundView()
 
-                VStack(alignment: .leading) {
-                    ProfileInfo(
-                        profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary",
-                        profileCaption: "Type what in your Mind...?", profileFollowersCount: 420,
-                        profileFollowingCount: 1992
-                    )
-                    .padding(.bottom, 10)
-
-                    ScrollView(.vertical) {
-                        ProfileSegmentOne()
-                        ProfileSegmentTwo()
-                        ProfileSegmentThree()
-                    }
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Profile")
+                        .font(.iMovieBold(30))
+                        .foregroundColor(.white)
 
                     Spacer()
+
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .padding(.trailing, 5)
+                    }
                 }
+                .padding([.leading, .trailing], 20)
+
+                ProfileInfo(
+                    profileImage: "ProfilePicDemo", profileName: "Morsy Elsokary",
+                    profileCaption: "Type what in your Mind...?", profileFollowersCount: 420,
+                    profileFollowingCount: 1992
+                )
+                .padding(.bottom, 10)
+
+                ScrollView(.vertical) {
+                    ProfileSegmentOne()
+                    ProfileSegmentTwo()
+                    ProfileSegmentThree()
+                }
+
+                Spacer()
             }
-            .navigationTitle("Profile")
-            .navigationBarTitleDisplayMode(.large)
         }
     }
 }
@@ -72,11 +92,15 @@ struct BackgroundView: View {
 
 struct ProfileInfo: View {
 
+    // MARK: - Properties
+
     var profileImage: String
     var profileName: String
     var profileCaption: String
     var profileFollowersCount: Int
     var profileFollowingCount: Int
+
+    // MARK: - Body
 
     var body: some View {
         HStack(spacing: 30) {

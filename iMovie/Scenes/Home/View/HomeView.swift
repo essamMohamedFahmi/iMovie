@@ -29,7 +29,7 @@ struct HomeView: View {
 
                     tabBar(geometry: geometry)
                 }
-                .edgesIgnoringSafeArea(.bottom)
+                .edgesIgnoringSafeArea([.bottom, .top])
             }
         }
     }
@@ -40,9 +40,7 @@ struct HomeView: View {
     private func currentPage() -> some View {
         switch pageRouter.currentPage {
         case .movies:
-            Text("Movies")
-                .font(.iMovieBold(40))
-                .foregroundColor(.iMovieRose)
+            MoviesView()
 
         case .actors:
             Text("Actors")
@@ -75,7 +73,7 @@ struct HomeView: View {
                 pageRouter: pageRouter, width: geometry.size.width / 4,
                 height: geometry.size.height / 28, systemIconName: "magnifyingglass", page: .search)
         }
-        .frame(width: geometry.size.width, height: geometry.size.height / 10)
+        .frame(width: geometry.size.width, height: geometry.size.height / 13)
         .background(.clear)
     }
 }

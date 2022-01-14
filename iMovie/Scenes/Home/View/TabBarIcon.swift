@@ -23,10 +23,8 @@ struct TabBarIcon: View {
     var body: some View {
         VStack {
             LinearGradient(
-                gradient: Gradient(
-                    colors: pageRouter.currentPage == page
-                        ? [Color.iMovieRose, Color.iMovieBlue] : [Color.gray]),
-                startPoint: .leading,
+                colors: pageRouter.currentPage == page
+                    ? [Color.iMovieRose, Color.iMovieBlue] : [Color.gray], startPoint: .leading,
                 endPoint: .top
             )
             .mask(Image(systemName: systemIconName))
