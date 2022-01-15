@@ -18,7 +18,7 @@ struct PasswordTextField: View {
     var placeholder = "Enter your password"
     var cornerRadius: CGFloat = 25
 
-    // MARK: - View Properties
+    // MARK: - View Components
 
     private var textField: some View {
         TextField("", text: $text)
@@ -27,6 +27,8 @@ struct PasswordTextField: View {
             .placeholder(placeholder, when: text.isEmpty)
             .font(.iMovieRegular(15))
             .foregroundColor(.white)
+            .autocapitalization(.none)
+            .disableAutocorrection(true)
     }
 
     private var secureTextField: some View {
@@ -36,6 +38,8 @@ struct PasswordTextField: View {
             .placeholder(placeholder, when: text.isEmpty)
             .font(.iMovieRegular(15))
             .foregroundColor(.white)
+            .autocapitalization(.none)
+            .disableAutocorrection(true)
     }
 
     private var eyeImage: some View {

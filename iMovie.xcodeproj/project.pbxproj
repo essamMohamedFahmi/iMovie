@@ -30,6 +30,8 @@
 		CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB442789101300E69190 /* LoginViewModel.swift */; };
 		CE01CB49278919D100E69190 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB48278919D100E69190 /* UserService.swift */; };
 		CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0260812792409800F725CC /* UIApplication+Windows.swift */; };
+		CE18CC4227933E3100D4FC1B /* ActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18CC4127933E3100D4FC1B /* ActorView.swift */; };
+		CE18CC44279350C100D4FC1B /* ActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18CC43279350C100D4FC1B /* ActorsView.swift */; };
 		CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */; };
 		CE38F0A4277BB89600B148FC /* Daniel-Davis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */; };
 		CE38F0A6277BB8BA00B148FC /* Vonique-64.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */; };
@@ -78,6 +80,8 @@
 		CE01CB442789101300E69190 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CE01CB48278919D100E69190 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CE0260812792409800F725CC /* UIApplication+Windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Windows.swift"; sourceTree = "<group>"; };
+		CE18CC4127933E3100D4FC1B /* ActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorView.swift; sourceTree = "<group>"; };
+		CE18CC43279350C100D4FC1B /* ActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsView.swift; sourceTree = "<group>"; };
 		CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Art-Brewery.ttf"; sourceTree = "<group>"; };
 		CE38F0A3277BB89600B148FC /* Daniel-Davis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Daniel-Davis.ttf"; sourceTree = "<group>"; };
 		CE38F0A5277BB8BA00B148FC /* Vonique-64.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vonique-64.ttf"; sourceTree = "<group>"; };
@@ -224,8 +228,26 @@
 			children = (
 				1D8BE068278C4AFC00BE7624 /* MoviesView.swift */,
 				1D8BE065278C4A3500BE7624 /* CategoryPickerView.swift */,
+				1D4471002784D5CE008E636B /* iMovieCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CE18CC3F27933E0700D4FC1B /* Actors */ = {
+			isa = PBXGroup;
+			children = (
+				CE18CC4027933E1700D4FC1B /* Views */,
+			);
+			path = Actors;
+			sourceTree = "<group>";
+		};
+		CE18CC4027933E1700D4FC1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE18CC43279350C100D4FC1B /* ActorsView.swift */,
+				CE18CC4127933E3100D4FC1B /* ActorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CE38F0AB277BD01200B148FC /* Assets */ = {
@@ -252,7 +274,6 @@
 		CE96BA992778C14F00CB7C08 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1D4471002784D5CE008E636B /* iMovieCardView.swift */,
 				CE96BA9A2778C19B00CB7C08 /* LottieView.swift */,
 				1DFD1840277A610D003EE880 /* VisualEffectView.swift */,
 				1D0AA0752784ECA90071E8D6 /* RatingCircleView.swift */,
@@ -302,6 +323,7 @@
 		CEC522222778B88C00F76DEA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CE18CC3F27933E0700D4FC1B /* Actors */,
 				1D8BE067278C4AB700BE7624 /* Movies */,
 				1D8565DA278B26E3003B529A /* Home */,
 				1DB0AFE02783A1F2006779D5 /* Login */,
@@ -542,11 +564,13 @@
 				1D8565DE278B3FA2003B529A /* PageRouter.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
+				CE18CC44279350C100D4FC1B /* ActorsView.swift in Sources */,
 				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
 				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,
 				CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,
+				CE18CC4227933E3100D4FC1B /* ActorView.swift in Sources */,
 				CE96BA9B2778C19B00CB7C08 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

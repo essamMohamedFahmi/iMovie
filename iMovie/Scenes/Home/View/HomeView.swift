@@ -29,7 +29,6 @@ struct HomeView: View {
 
                     tabBar(geometry: geometry)
                 }
-                .edgesIgnoringSafeArea([.bottom, .top])
             }
         }
     }
@@ -43,9 +42,7 @@ struct HomeView: View {
             MoviesView()
 
         case .actors:
-            Text("Actors")
-                .font(.iMovieBold(40))
-                .foregroundColor(.iMovieRose)
+            ActorsView()
 
         case .search:
             Text("Search")

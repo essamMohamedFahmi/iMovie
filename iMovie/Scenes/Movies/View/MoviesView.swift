@@ -9,35 +9,27 @@ import SwiftUI
 
 struct MoviesView: View {
 
-    // MARK: - Properties
-
-    let topSafeAreaInset: CGFloat = {
-        guard let key = UIApplication.shared.keyWindow?.safeAreaInsets.top else { return 5.0 }
-        return key + 10.0
-    }()
-
     // MARK: - Body
 
     var body: some View {
-        ZStack {
-            VStack(spacing: 0) {
-                NavigationBarView()
-                    .padding(.horizontal, 15)
-                    .padding(.bottom)
-                    .padding(.top, topSafeAreaInset)
-                    .background(.clear)
+        VStack(spacing: 0) {
+            NavigationBarView(title: "Movies")
+                .padding(.horizontal, 15)
+                .padding(.bottom)
+                .background(.clear)
 
-                Spacer()
+            Spacer()
 
-                CategoryPickerView()
-            }
+            CategoryPickerView()
         }
-        .ignoresSafeArea(.all, edges: .top)
     }
 }
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesView()
+        ZStack {
+            BackgroundView()
+            MoviesView()
+        }
     }
 }

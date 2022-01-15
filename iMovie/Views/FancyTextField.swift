@@ -32,6 +32,8 @@ struct FancyTextField: View {
                     .placeholder(placeholder, when: text.isEmpty)
                     .font(.iMovieRegular(15))
                     .foregroundColor(.white)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
 
                 if let imageName = imageName {
                     Image(systemName: imageName)

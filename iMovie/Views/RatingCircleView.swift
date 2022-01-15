@@ -45,7 +45,7 @@ struct RatingCircle: View {
                 .stroke(rateColor, lineWidth: 3)
                 .frame(width: 50, height: 50)
                 .rotationEffect(Angle(degrees: -90))
-                .animation(Animation.default.delay(1.0), value: isLoading)
+                .animation(Animation.default, value: isLoading)
         }
         .onAppear {
             isLoading.toggle()

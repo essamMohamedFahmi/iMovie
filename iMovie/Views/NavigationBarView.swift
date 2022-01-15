@@ -11,6 +11,11 @@ struct NavigationBarView: View {
 
     // MARK: - Properties
 
+    var title: String
+    var showItems: Bool = true
+
+    // MARK: - Private Properties
+
     @State private var logoAnimated: Bool = false
     @State private var showProfile: Bool = false
 
@@ -29,7 +34,7 @@ struct NavigationBarView: View {
     }
 
     private var navLogo: some View {
-        Text("Movie")
+        Text(title)
             .opacity(logoAnimated ? 1 : 0)
             .offset(x: 0, y: logoAnimated ? 0 : -35)
             .font(.iMovieBold(25))
@@ -61,7 +66,9 @@ struct NavigationBarView: View {
 
     var body: some View {
         HStack {
-            hamburgerMenuButton
+            if showItems {
+                hamburgerMenuButton
+            }
 
             Spacer()
 
@@ -69,7 +76,9 @@ struct NavigationBarView: View {
 
             Spacer()
 
-            showProfileButton
+            if showItems {
+                showProfileButton
+            }
         }
     }
 }
@@ -78,7 +87,7 @@ struct NavigationBarView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             BackgroundView()
-            NavigationBarView()
+            NavigationBarView(title: "Movies")
                 .previewLayout(.sizeThatFits)
                 .padding()
         }
