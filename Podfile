@@ -5,5 +5,6 @@ target 'iMovie' do
   use_frameworks!
   pod 'lottie-ios'
   pod 'SSToastMessage'
+  pod 'Alamofire'
 
 end

@@ -26,6 +26,8 @@
 		1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3512778FEF200BDAE2B /* ProfileView.swift */; };
 		1DDAA355277906FC00BDAE2B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDAA354277906FC00BDAE2B /* Colors.xcassets */; };
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
+		1DF74C8227935E2300A15B88 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF74C8127935E2300A15B88 /* URLRequestBuilder.swift */; };
+		1DF74C8427935EA000A15B88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF74C8327935EA000A15B88 /* NetworkService.swift */; };
 		1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* VisualEffectView.swift */; };
 		CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB442789101300E69190 /* LoginViewModel.swift */; };
 		CE01CB49278919D100E69190 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB48278919D100E69190 /* UserService.swift */; };
@@ -73,6 +75,8 @@
 		1DDAA3512778FEF200BDAE2B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1DDAA354277906FC00BDAE2B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DDAA3572779095000BDAE2B /* Color+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+App.swift"; sourceTree = "<group>"; };
+		1DF74C8127935E2300A15B88 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		1DF74C8327935EA000A15B88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1DFD1840277A610D003EE880 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		458ABE4AE6C093C3075B7735 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		9040256661AB9646CACA01ED /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +186,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1DF74C8027935DAF00A15B88 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1DF74C8127935E2300A15B88 /* URLRequestBuilder.swift */,
+				1DF74C8327935EA000A15B88 /* NetworkService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		4A37619732C19FF38494AA1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 		CE01CB47278919C000E69190 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				1DF74C8027935DAF00A15B88 /* Base */,
 				CE01CB4A278919D500E69190 /* User */,
 			);
 			path = Remote;
@@ -558,8 +572,10 @@
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
 				CE01CB49278919D100E69190 /* UserService.swift in Sources */,
 				CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */,
+				1DF74C8427935EA000A15B88 /* NetworkService.swift in Sources */,
 				CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */,
 				1D8565DC278B26F9003B529A /* HomeView.swift in Sources */,
+				1DF74C8227935E2300A15B88 /* URLRequestBuilder.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
 				1D8565DE278B3FA2003B529A /* PageRouter.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
