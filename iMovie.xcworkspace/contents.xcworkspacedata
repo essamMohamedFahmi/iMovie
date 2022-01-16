@@ -5,6 +5,9 @@
       location = "group:iMovie.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:iMovieService/iMovieService.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import iMovieService
 
 class LoginViewModel: ObservableObject {
 

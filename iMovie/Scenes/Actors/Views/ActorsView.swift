@@ -5,15 +5,33 @@
 //  Created by Essam Fahmi on 15/01/2022.
 //
 
+import Combine
 import SwiftUI
+import iMovieService
 
 struct ActorsView: View {
+
+    var subscriptions = Set<AnyCancellable>()
 
     // MARK: - Init
 
     init() {
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
+
+        let service = ActorsService()
+        service.getActors()
+            .sink { completion in
+                switch completion {
+                case let .failure(error):
+                    print("oops got an error \(error.localizedDescription)")
+                case .finished:
+                    print("nothing much to do here")
+                }
+            } receiveValue: { response in
+                print("got my response here \(response)")
+            }
+            .store(in: &subscriptions)
     }
 
     // MARK: - Body

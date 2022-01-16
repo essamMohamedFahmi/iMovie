@@ -1,33 +1,30 @@
-//
-//  UserService.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 08/01/2022.
-//
-
 import Combine
 import Foundation
 
-struct User {
+public struct User {
     var username: String
     var email: String
 }
 
-protocol UserServiceProtocol {
+public protocol UserServiceProtocol {
     func login(username: String, password: String) -> AnyPublisher<User, Error>
 }
 
-struct AuthError: LocalizedError {
-    var errorDescription: String? {
+public struct AuthError: LocalizedError {
+    public var errorDescription: String? {
         "Credentials are wrong!"
     }
 }
 
-final class UserService: UserServiceProtocol {
+public final class UserService: UserServiceProtocol {
+
+    // MARK: - Init
+
+    public init() {}
 
     // MARK: - Methods
 
-    func login(username: String, password: String) -> AnyPublisher<User, Error> {
+    public func login(username: String, password: String) -> AnyPublisher<User, Error> {
         Future<User, Error> { promise in
             if username == "" && password == "" {
                 promise(.success(User(username: "essam", email: "essam@gmail.com")))

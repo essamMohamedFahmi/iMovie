@@ -44,12 +44,14 @@
 		3EB03A262C7F5F9B14DFC52CC9C8B6F6 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6D1DAC64C00A6CAA87C06C41620030 /* ColorExtension.swift */; };
 		3EC7B1E8A42E64BC81E289A460EB6A07 /* FillI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D66550E9D10C999EC226763B91920FA /* FillI.swift */; };
 		3F84D4C0A3E8A01D6FC705973B6CD4E3 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1138141C7C6915B1189F94B845D1D7C /* PointValueProvider.swift */; };
-		3F9E48D84A0CC3186A3399A3241C2B45 /* Pods-iMovie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D448475C70667B72C443168444CC09 /* Pods-iMovie-dummy.m */; };
+		3F9E48D84A0CC3186A3399A3241C2B45 /* Pods-iMovie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0A3844CC0BD0C8404B8E58FBCA6263 /* Pods-iMovie-dummy.m */; };
 		4222ADA2E456904DAA7C5E6C135457F4 /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2869B7C8E9DE55B3AECBD2760A4E04 /* ColorValueProvider.swift */; };
+		459E8C0D225A6D947FAA61F865732CD7 /* Pods-iMovieService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E42BB15DF5687F483B5E8526E66E1 /* Pods-iMovieService-dummy.m */; };
 		47F63B725F7D79C6B35AE458421320EC /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F880782786137F48402599C83FF7E0 /* FillRenderer.swift */; };
 		49229652E662E1F06AD60AB7E04816D1 /* GradientStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC95FFD0892DF603D267744FDCF00B6F /* GradientStrokeRenderer.swift */; };
 		4B6F77ADDBD9A476A94F29AA8311B595 /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2652A21A37E44AEA4364AAABAA906C /* PrecompAsset.swift */; };
 		4C159BD8975D5734D8F9D71E51DD30CF /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6E26B0B0260136FD3C7710D5579CA1 /* CompositionLayer.swift */; };
+		4D7936921C8FB643235350AB56B08E06 /* Pods-iMovieService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E36CE95EF0AED278BC7931A52C3DD9 /* Pods-iMovieService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DDFDBCB37FA90B0BBF12A0A2EE8736E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA2C16B0984D194FA01D0213E60B45F /* StringExtensions.swift */; };
 		4E0588332E5C8BE6B875B5A440192EFC /* SingleValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93BD37598CB61C4A7C5D48E969FF16 /* SingleValueProvider.swift */; };
 		502B36A7D6E865B6C980705FF1938DF8 /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73EE4413E39F85568476A721FF637DE /* PreCompositionLayer.swift */; };
@@ -125,6 +127,7 @@
 		D482B07B389D6BED35B449680862FD5F /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70093B961D9F62CEDD912E4BEF713247 /* Animation.swift */; };
 		D4FE036734A6D5B9548B6E8144804700 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44F32936FF328EB3177E6818EB08D9 /* AnimationContext.swift */; };
 		D79692BB25F9CFC26CEEA50ABB81CE95 /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2125DD17CEC8D6131EF57BE06200B /* NullCompositionLayer.swift */; };
+		DAE5F856F1B83D10409E856E91E3FB3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F492613013130A76576CA6EE14BB84 /* Foundation.framework */; };
 		DB64698482B57470F644E7A916619EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F492613013130A76576CA6EE14BB84 /* Foundation.framework */; };
 		DB8CB26680625363B4223412D88C3041 /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C101DF92776EF43E0C1009556B6217 /* AnimationSubview.swift */; };
 		DE66E6F35287CBE5875652B44E5DB76E /* AnyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001ACB6008E9ABC3E9D53B2AF9C8096 /* AnyValueContainer.swift */; };
@@ -147,7 +150,7 @@
 		F734F4F307A445DC8CDD50ED2FBDD8CC /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042424A8A4CB4717E20DA5AD7B10D595 /* AnimationPublic.swift */; };
 		F79C6CF75F09D963BC5B8C2C9680D862 /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E271DEB3E20857D9D77DB1B08EF7A8C /* NodePropertyMap.swift */; };
 		FA6BCAE8F1D4B6B2376C0FC7E40D57F5 /* TrimPathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AA67DEB30FAF3725644D1A1B7F3477 /* TrimPathNode.swift */; };
-		FB9BCFDFD06BE6D137A1275D42199565 /* Pods-iMovie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D5356E18789ADE0BA548DC804E05A41 /* Pods-iMovie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB9BCFDFD06BE6D137A1275D42199565 /* Pods-iMovie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0F32F38744FBAF6989361EE7FF1BAB /* Pods-iMovie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE98AD283DEC4756C96A5B967705DC15 /* DispatchWorkHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FF215A66D1E7BB8541703B6CD7D1AD /* DispatchWorkHolder.swift */; };
 		FEC9061C02A16F7449132B5407416BDA /* AnimationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F07B0D5974AB35B0B75CCB12D0F48C /* AnimationContainer.swift */; };
 		FEFFEFAF099B5368569FA4AFBB05CDBD /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D96F6341438F7C60FEBFB616B3CCC6B /* PathNode.swift */; };
@@ -182,7 +185,6 @@
 		0BE85840FA2B72B94EB29C918B3A4414 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExtensions.swift; path = "lottie-swift/src/Private/Utility/Extensions/CGFloatExtensions.swift"; sourceTree = "<group>"; };
 		0C389F4D4173E5ABC16EE7358F108C23 /* ImageLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/ImageLayerModel.swift"; sourceTree = "<group>"; };
 		0CE7EBDD6EB1034E95343E8B44580CEC /* InvertedMatteLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvertedMatteLayer.swift; path = "lottie-swift/src/Private/LayerContainers/Utility/InvertedMatteLayer.swift"; sourceTree = "<group>"; };
-		0D5356E18789ADE0BA548DC804E05A41 /* Pods-iMovie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMovie-umbrella.h"; sourceTree = "<group>"; };
 		0EE3B8C88406101176A324CCBD8A90CB /* GradientFillNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientFillNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/GradientFillNode.swift"; sourceTree = "<group>"; };
 		10103F48DB6B458A2043E3FA1EC642F3 /* FilepathImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilepathImageProvider.swift; path = "lottie-swift/src/Public/iOS/FilepathImageProvider.swift"; sourceTree = "<group>"; };
 		11665CF16FEF2168D8CA43B64D3CE601 /* AnimationTextProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationTextProvider.swift; path = "lottie-swift/src/Public/TextProvider/AnimationTextProvider.swift"; sourceTree = "<group>"; };
@@ -190,16 +192,18 @@
 		12A6FAE7BFCD2B6F367F805EE3587813 /* SSToastMessage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSToastMessage-prefix.pch"; sourceTree = "<group>"; };
 		1408596F98757D78805FB79818F69EA2 /* LottieView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieView.swift; path = "lottie-swift/src/Public/iOS/LottieView.swift"; sourceTree = "<group>"; };
 		148A590BD8E691E99A2E190552A5C57F /* PathElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathElement.swift; path = "lottie-swift/src/Private/Utility/Primitives/PathElement.swift"; sourceTree = "<group>"; };
-		14D52A2346424B0679F44FC654805A80 /* Pods-iMovie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iMovie.modulemap"; sourceTree = "<group>"; };
 		18DDF720BAF1E9A92C49821CDF6EC323 /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
 		1AA2C16B0984D194FA01D0213E60B45F /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = "lottie-swift/src/Private/Utility/Extensions/StringExtensions.swift"; sourceTree = "<group>"; };
 		1DB659C1BA670A85AA180DC46C757A89 /* GroupNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderContainers/GroupNode.swift"; sourceTree = "<group>"; };
 		23CB78CAE18AA8DD51FA55AFEC21D61D /* Asset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Asset.swift; path = "lottie-swift/src/Private/Model/Assets/Asset.swift"; sourceTree = "<group>"; };
 		2469612E2F4388DA77C73312FD4A55BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		25262D1F0CEE7B69102F26E6CAC772F6 /* AnimatedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedControl.swift; path = "lottie-swift/src/Public/iOS/AnimatedControl.swift"; sourceTree = "<group>"; };
+		26D03C65DC518CB6CF29470AE26AB633 /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
 		27F1AA0D8A572BB30A9607591F2459A7 /* StarNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/StarNode.swift"; sourceTree = "<group>"; };
 		28634EF13D29314F774F90655799ECD5 /* ImageAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageAsset.swift; path = "lottie-swift/src/Private/Model/Assets/ImageAsset.swift"; sourceTree = "<group>"; };
+		2D5300261903D6A0A4C38571F55623C5 /* Pods-iMovieService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovieService.release.xcconfig"; sourceTree = "<group>"; };
 		2DC81C2982854D8D5C0979525650AC64 /* Vectors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vectors.swift; path = "lottie-swift/src/Public/Primitives/Vectors.swift"; sourceTree = "<group>"; };
+		2E89E4A93F38F4E8096A035A079F4D2F /* Pods-iMovie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovie-Info.plist"; sourceTree = "<group>"; };
 		2E92D47582E5FA0FF7D9484735BCB907 /* AnimationKeypath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationKeypath.swift; path = "lottie-swift/src/Public/DynamicProperties/AnimationKeypath.swift"; sourceTree = "<group>"; };
 		2EC5123DCD0F1BB24D25BD3DFB918A63 /* ShapeContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeContainerLayer.swift; path = "lottie-swift/src/Private/NodeRenderSystem/RenderLayers/ShapeContainerLayer.swift"; sourceTree = "<group>"; };
 		2F08EAC71A6B14B4D5A0264AC7066BD8 /* SizeValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/SizeValueProvider.swift"; sourceTree = "<group>"; };
@@ -208,7 +212,9 @@
 		34F880782786137F48402599C83FF7E0 /* FillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillRenderer.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/Renderables/FillRenderer.swift"; sourceTree = "<group>"; };
 		36FF215A66D1E7BB8541703B6CD7D1AD /* DispatchWorkHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchWorkHolder.swift; path = SSToastMessage/Sources/Classes/DispatchWorkHolder.swift; sourceTree = "<group>"; };
 		38150A7D8C7CFB6D0325389330CCC52E /* Rectangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rectangle.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Rectangle.swift"; sourceTree = "<group>"; };
+		3A0F32F38744FBAF6989361EE7FF1BAB /* Pods-iMovie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMovie-umbrella.h"; sourceTree = "<group>"; };
 		3F44F32936FF328EB3177E6818EB08D9 /* AnimationContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationContext.swift; path = "lottie-swift/src/Private/Utility/Helpers/AnimationContext.swift"; sourceTree = "<group>"; };
+		3F4E42BB15DF5687F483B5E8526E66E1 /* Pods-iMovieService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMovieService-dummy.m"; sourceTree = "<group>"; };
 		4002F03546BE399B63724EB2D58BCE54 /* ImageCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/ImageCompositionLayer.swift"; sourceTree = "<group>"; };
 		404E585DCAC2A09E3403AE02F3D13879 /* Keyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keyframe.swift; path = "lottie-swift/src/Private/Model/Keyframes/Keyframe.swift"; sourceTree = "<group>"; };
 		40F65F8CE5BC2F5931D9DC9F2497C2B1 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPath.swift; path = "lottie-swift/src/Private/Utility/Primitives/BezierPath.swift"; sourceTree = "<group>"; };
@@ -229,7 +235,9 @@
 		54B613C9083EEFD9A14A19A851E81806 /* SSToastMessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSToastMessage.debug.xcconfig; sourceTree = "<group>"; };
 		54D3F43BBAE62095F5C4DD036AB3250F /* AnimationImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationImageProvider.swift; path = "lottie-swift/src/Public/ImageProvider/AnimationImageProvider.swift"; sourceTree = "<group>"; };
 		54DEA2F87D88A65BF807B0A657CDDFA8 /* LayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/LayerModel.swift"; sourceTree = "<group>"; };
+		5628780ECE1CA148673DE96496B9AA9F /* Pods-iMovieService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovieService.debug.xcconfig"; sourceTree = "<group>"; };
 		57F7BC1AEF1CE9709B7685D0B2595E6C /* GradientValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/GradientValueProvider.swift"; sourceTree = "<group>"; };
+		58E9897CEEE93DA942F4C24A39F8125C /* Pods_iMovieService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iMovieService.framework; path = "Pods-iMovieService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598E6F80A859D15AE668E0C56D947E1E /* AnimationViewInitializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationViewInitializers.swift; path = "lottie-swift/src/Public/Animation/AnimationViewInitializers.swift"; sourceTree = "<group>"; };
 		5A2F440687182A02224C8656D91B9C67 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = "lottie-swift/src/Public/Primitives/Color.swift"; sourceTree = "<group>"; };
 		5ADA6CFB8B4E07F3C3B7BDFAED779833 /* LayerDebugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerDebugging.swift; path = "lottie-swift/src/Private/Utility/Debugging/LayerDebugging.swift"; sourceTree = "<group>"; };
@@ -245,41 +253,39 @@
 		66AA67DEB30FAF3725644D1A1B7F3477 /* TrimPathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrimPathNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/ModifierNodes/TrimPathNode.swift"; sourceTree = "<group>"; };
 		67DDEEBC4D6E802C89286A19DBE12F55 /* KeyframeGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeGroup.swift; path = "lottie-swift/src/Private/Model/Keyframes/KeyframeGroup.swift"; sourceTree = "<group>"; };
 		6AE2125DD17CEC8D6131EF57BE06200B /* NullCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NullCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/NullCompositionLayer.swift"; sourceTree = "<group>"; };
-		6BC75BE9DD855D4594BDB13DB9EF1DB9 /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		6C4ED526D553D8E20FFDF1460994A192 /* SSToastMessage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSToastMessage-umbrella.h"; sourceTree = "<group>"; };
 		6CD15525A92DE9138EFDEAA0291426AA /* PathOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathOutputNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/PathOutputNode.swift"; sourceTree = "<group>"; };
 		6D96F6341438F7C60FEBFB616B3CCC6B /* PathNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Protocols/PathNode.swift"; sourceTree = "<group>"; };
 		6F1DEB8510DC3CA40DAF42E7870B68E5 /* SolidCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/SolidCompositionLayer.swift"; sourceTree = "<group>"; };
 		70093B961D9F62CEDD912E4BEF713247 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = "lottie-swift/src/Private/Model/Animation.swift"; sourceTree = "<group>"; };
-		707EE93421EDF785B7419A9EA93B19F2 /* Pods-iMovie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovie-Info.plist"; sourceTree = "<group>"; };
 		7490DCB71AEF36C4D26E9CE72120613C /* GradientStrokeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientStrokeNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/GradientStrokeNode.swift"; sourceTree = "<group>"; };
 		75C40A7679D7E8015DEDA55B1A23CA2B /* GroupInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupInterpolator.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.swift"; sourceTree = "<group>"; };
 		7742DBB0B106900E9D6FF2427FC362E0 /* lottie-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "lottie-ios.release.xcconfig"; sourceTree = "<group>"; };
-		79F372D44AC5930994CB47EFFCE0EFB9 /* Pods-iMovie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovie-acknowledgements.plist"; sourceTree = "<group>"; };
 		7C405DFD89824AFE52439A9F9260FB7F /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iMovie.framework; path = "Pods-iMovie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D1DAC64C00A6CAA87C06C41620030 /* ColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = "lottie-swift/src/Private/Utility/Primitives/ColorExtension.swift"; sourceTree = "<group>"; };
 		7DC9E5766BB1D25F873F3E39494586D0 /* PassThroughOutputNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassThroughOutputNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/OutputNodes/PassThroughOutputNode.swift"; sourceTree = "<group>"; };
 		7F8904F1CB879A64752A0BB50B6BC7A9 /* ValueContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueContainer.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueContainer.swift"; sourceTree = "<group>"; };
-		808A8C5222020C70A414EB7BE37D47DF /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
+		8150D9D734C25D6376384D9583076474 /* Pods-iMovieService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovieService-Info.plist"; sourceTree = "<group>"; };
+		81EDC64578F8CC135557F1DE1F149B94 /* Pods-iMovieService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iMovieService.modulemap"; sourceTree = "<group>"; };
 		83568AC62DCFB84BF2F4EE8D2D119A79 /* AnimationCacheProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationCacheProvider.swift; path = "lottie-swift/src/Public/AnimationCache/AnimationCacheProvider.swift"; sourceTree = "<group>"; };
 		8501133C5A33AF985D411900809F87BD /* SSToastMessage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSToastMessage.modulemap; sourceTree = "<group>"; };
 		88662F7AF9BC3521EFF663C9D90CF80C /* PolygonNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolygonNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/PolygonNode.swift"; sourceTree = "<group>"; };
-		89D448475C70667B72C443168444CC09 /* Pods-iMovie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMovie-dummy.m"; sourceTree = "<group>"; };
 		8B6255E94650043F22F549D5D9351B14 /* RectNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/RectNode.swift"; sourceTree = "<group>"; };
 		8E271DEB3E20857D9D77DB1B08EF7A8C /* NodePropertyMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodePropertyMap.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.swift"; sourceTree = "<group>"; };
 		90CC3FD69DD333410262E1FE327E1D8D /* Ellipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ellipse.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Ellipse.swift"; sourceTree = "<group>"; };
 		92CC945447FC52B113ADDEBAC2B0FF84 /* AnimatedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedButton.swift; path = "lottie-swift/src/Public/iOS/AnimatedButton.swift"; sourceTree = "<group>"; };
+		93533E2F8C655C5E03C3208C485E8D60 /* Pods-iMovie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovie-acknowledgements.plist"; sourceTree = "<group>"; };
+		94C17FD650F37620B74CA5C5E15DDCD2 /* Pods-iMovie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMovie-frameworks.sh"; sourceTree = "<group>"; };
+		962680AE5266567E0A2053A0268408D0 /* Pods-iMovieService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMovieService-acknowledgements.plist"; sourceTree = "<group>"; };
 		97D8816CCBB16DB07679798745E09AE2 /* SSToastMessage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSToastMessage.framework; path = SSToastMessage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9852B9056DC08FCEC3761339E3351945 /* CompatibleAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompatibleAnimationView.swift; path = "lottie-swift/src/Public/iOS/Compatibility/CompatibleAnimationView.swift"; sourceTree = "<group>"; };
 		99CB994E50DC6144F653546EE42E38DA /* lottie-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "lottie-ios-Info.plist"; sourceTree = "<group>"; };
 		9BF7F96794D47861A0976DD2096E4817 /* CompatibleAnimationKeypath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompatibleAnimationKeypath.swift; path = "lottie-swift/src/Public/iOS/Compatibility/CompatibleAnimationKeypath.swift"; sourceTree = "<group>"; };
-		9CBEA3A335DC1D2953DC72F2C896D118 /* Pods-iMovie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMovie-frameworks.sh"; sourceTree = "<group>"; };
 		9D66550E9D10C999EC226763B91920FA /* FillI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillI.swift; path = "lottie-swift/src/Private/Model/ShapeItems/FillI.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1C101DF92776EF43E0C1009556B6217 /* AnimationSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSubview.swift; path = "lottie-swift/src/Public/iOS/AnimationSubview.swift"; sourceTree = "<group>"; };
 		A22817831B9B56A619B165BFEE833376 /* InterpolatableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpolatableExtensions.swift; path = "lottie-swift/src/Private/Utility/Interpolatable/InterpolatableExtensions.swift"; sourceTree = "<group>"; };
 		A53945DD0E480B17ADC62128CBA25347 /* EllipseNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EllipseNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/EllipseNode.swift"; sourceTree = "<group>"; };
-		A67E54AE8D53E6E885C741E3928BA80B /* Pods-iMovie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMovie-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A7587ACCBE43549DAB565B36DC88DFA3 /* lottie-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "lottie-ios-umbrella.h"; sourceTree = "<group>"; };
 		A83EB80023DDC746A755BD3B839CDBF6 /* GradientFill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientFill.swift; path = "lottie-swift/src/Private/Model/ShapeItems/GradientFill.swift"; sourceTree = "<group>"; };
 		A90232DA69583A6539E2901DEC2C0393 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
@@ -295,9 +301,12 @@
 		BA282644A5811DFDF4F796EBAA701225 /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Stroke.swift"; sourceTree = "<group>"; };
 		BB2869B7C8E9DE55B3AECBD2760A4E04 /* ColorValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/ColorValueProvider.swift"; sourceTree = "<group>"; };
 		BB93BD37598CB61C4A7C5D48E969FF16 /* SingleValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleValueProvider.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/SingleValueProvider.swift"; sourceTree = "<group>"; };
+		BD0A3844CC0BD0C8404B8E58FBCA6263 /* Pods-iMovie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMovie-dummy.m"; sourceTree = "<group>"; };
 		BDF8E189E4DAA44DAF7893AE6D93CCBA /* MaskContainerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskContainerLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/MaskContainerLayer.swift"; sourceTree = "<group>"; };
 		BE6F7A4B7EB061DAF4D919118B652F75 /* lottie-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "lottie-ios.modulemap"; sourceTree = "<group>"; };
+		C1D67D5EE76A68D1E91D9539E57DDCAF /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		C207361E059D89947B9D74A8BFFED30E /* ShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift"; sourceTree = "<group>"; };
+		C226748E4480C0ECB1B0A62457A8250B /* Pods-iMovie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iMovie.modulemap"; sourceTree = "<group>"; };
 		C380B49E7084C3650B38A0B4E7302E5B /* SSToastMessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSToastMessage.release.xcconfig; sourceTree = "<group>"; };
 		C73EE4413E39F85568476A721FF637DE /* PreCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/PreCompositionLayer.swift"; sourceTree = "<group>"; };
 		CA24075AED2FA90A4239F6A192BA64E3 /* TextDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextDocument.swift; path = "lottie-swift/src/Private/Model/Text/TextDocument.swift"; sourceTree = "<group>"; };
@@ -321,10 +330,12 @@
 		E5F07B0D5974AB35B0B75CCB12D0F48C /* AnimationContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationContainer.swift; path = "lottie-swift/src/Private/LayerContainers/AnimationContainer.swift"; sourceTree = "<group>"; };
 		E69A15504A02B1220AE1B7EBD0C41CDF /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = "lottie-swift/src/Private/Model/Objects/Mask.swift"; sourceTree = "<group>"; };
 		E6B62F1CB7351C3C45A8EB5C27F1ACF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E8023AF1972BD7252E281001DC2F8F1F /* Pods-iMovie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMovie-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E82A9995F1C7DCA1E382B6F68CBE863D /* CompositionLayersInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositionLayersInitializer.swift; path = "lottie-swift/src/Private/LayerContainers/Utility/CompositionLayersInitializer.swift"; sourceTree = "<group>"; };
 		E841723316F65A8B93C25415C3BFD4A6 /* TextLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextLayer.swift; path = "lottie-swift/src/Private/LayerContainers/Utility/TextLayer.swift"; sourceTree = "<group>"; };
 		E8BAC8AA0E906431BF515C896B447128 /* TextCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/TextCompositionLayer.swift"; sourceTree = "<group>"; };
 		EB1EF81FFAA4E219DDD3748F0BBAEEFC /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = "lottie-swift/src/Private/Model/Objects/Transform.swift"; sourceTree = "<group>"; };
+		ED38A244F97FDEF9457F8BE30962CE2D /* Pods-iMovieService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMovieService-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ED46543C9C41257BA4F92538041DBAE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED50C51421FF09233785D98DD9450BCF /* TextAnimatorNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAnimatorNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/Text/TextAnimatorNode.swift"; sourceTree = "<group>"; };
 		EE47B61D9A93A16DB8D64FCDEA9BEDA3 /* FillNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/RenderNodes/FillNode.swift"; sourceTree = "<group>"; };
@@ -332,6 +343,7 @@
 		F07BF9F7370D58FEE04D1EAD71142EBF /* SSToastMessage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSToastMessage-Info.plist"; sourceTree = "<group>"; };
 		F55BF90A0EA344DA0A334BA2A0865946 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Shape.swift"; sourceTree = "<group>"; };
 		F8F833797A7D63131A5C31360C5ABC20 /* LRUAnimationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LRUAnimationCache.swift; path = "lottie-swift/src/Public/AnimationCache/LRUAnimationCache.swift"; sourceTree = "<group>"; };
+		F9E36CE95EF0AED278BC7931A52C3DD9 /* Pods-iMovieService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMovieService-umbrella.h"; sourceTree = "<group>"; };
 		FA98FCA844F24687502C83F6C65BFABC /* Glyph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyph.swift; path = "lottie-swift/src/Private/Model/Text/Glyph.swift"; sourceTree = "<group>"; };
 		FBEF00B95E7DF0A87A67AA97977D1E42 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeTransform.swift; path = "lottie-swift/src/Private/Model/ShapeItems/ShapeTransform.swift"; sourceTree = "<group>"; };
 		FC6B27FB2B120A07CB4B4882BD738EA9 /* KeyframeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeExtensions.swift; path = "lottie-swift/src/Private/Utility/Interpolatable/KeyframeExtensions.swift"; sourceTree = "<group>"; };
@@ -369,13 +381,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCDA875D5653A6FB8636AEF8875C35D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE5F856F1B83D10409E856E91E3FB3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2659D55A8532FDD2BED092FD13D9C629 /* Targets Support Files */ = {
+		047C72C654B325C1899C7827B496994A /* Pods-iMovieService */ = {
 			isa = PBXGroup;
 			children = (
-				D9DFC7F8C842861DECCEBD73198148FC /* Pods-iMovie */,
+				81EDC64578F8CC135557F1DE1F149B94 /* Pods-iMovieService.modulemap */,
+				ED38A244F97FDEF9457F8BE30962CE2D /* Pods-iMovieService-acknowledgements.markdown */,
+				962680AE5266567E0A2053A0268408D0 /* Pods-iMovieService-acknowledgements.plist */,
+				3F4E42BB15DF5687F483B5E8526E66E1 /* Pods-iMovieService-dummy.m */,
+				8150D9D734C25D6376384D9583076474 /* Pods-iMovieService-Info.plist */,
+				F9E36CE95EF0AED278BC7931A52C3DD9 /* Pods-iMovieService-umbrella.h */,
+				5628780ECE1CA148673DE96496B9AA9F /* Pods-iMovieService.debug.xcconfig */,
+				2D5300261903D6A0A4C38571F55623C5 /* Pods-iMovieService.release.xcconfig */,
+			);
+			name = "Pods-iMovieService";
+			path = "Target Support Files/Pods-iMovieService";
+			sourceTree = "<group>";
+		};
+		34F633B334D757A34090225A6B2F2B58 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6733EEE2415E1C2061EB68F1B41CACE /* Pods-iMovie */,
+				047C72C654B325C1899C7827B496994A /* Pods-iMovieService */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -528,16 +565,6 @@
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
-		802456A45D5980F60EA4A53C56171459 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */,
-				7C405DFD89824AFE52439A9F9260FB7F /* Pods_iMovie.framework */,
-				97D8816CCBB16DB07679798745E09AE2 /* SSToastMessage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		806C876617C2C12898694478F3D4117F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +575,17 @@
 				ED46543C9C41257BA4F92538041DBAE9 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		909B6046CA3FB913427164799A31C3F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */,
+				7C405DFD89824AFE52439A9F9260FB7F /* Pods_iMovie.framework */,
+				58E9897CEEE93DA942F4C24A39F8125C /* Pods_iMovieService.framework */,
+				97D8816CCBB16DB07679798745E09AE2 /* SSToastMessage.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A85E7042B3FCFE453D8FED4C5D3BFA5B /* Support Files */ = {
@@ -573,14 +611,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C6733EEE2415E1C2061EB68F1B41CACE /* Pods-iMovie */ = {
+			isa = PBXGroup;
+			children = (
+				C226748E4480C0ECB1B0A62457A8250B /* Pods-iMovie.modulemap */,
+				E8023AF1972BD7252E281001DC2F8F1F /* Pods-iMovie-acknowledgements.markdown */,
+				93533E2F8C655C5E03C3208C485E8D60 /* Pods-iMovie-acknowledgements.plist */,
+				BD0A3844CC0BD0C8404B8E58FBCA6263 /* Pods-iMovie-dummy.m */,
+				94C17FD650F37620B74CA5C5E15DDCD2 /* Pods-iMovie-frameworks.sh */,
+				2E89E4A93F38F4E8096A035A079F4D2F /* Pods-iMovie-Info.plist */,
+				3A0F32F38744FBAF6989361EE7FF1BAB /* Pods-iMovie-umbrella.h */,
+				C1D67D5EE76A68D1E91D9539E57DDCAF /* Pods-iMovie.debug.xcconfig */,
+				26D03C65DC518CB6CF29470AE26AB633 /* Pods-iMovie.release.xcconfig */,
+			);
+			name = "Pods-iMovie";
+			path = "Target Support Files/Pods-iMovie";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 				4BB779ECBA9579360DB57B92F132787D /* Pods */,
-				802456A45D5980F60EA4A53C56171459 /* Products */,
-				2659D55A8532FDD2BED092FD13D9C629 /* Targets Support Files */,
+				909B6046CA3FB913427164799A31C3F8 /* Products */,
+				34F633B334D757A34090225A6B2F2B58 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -594,23 +649,6 @@
 			);
 			name = SSToastMessage;
 			path = SSToastMessage;
-			sourceTree = "<group>";
-		};
-		D9DFC7F8C842861DECCEBD73198148FC /* Pods-iMovie */ = {
-			isa = PBXGroup;
-			children = (
-				14D52A2346424B0679F44FC654805A80 /* Pods-iMovie.modulemap */,
-				A67E54AE8D53E6E885C741E3928BA80B /* Pods-iMovie-acknowledgements.markdown */,
-				79F372D44AC5930994CB47EFFCE0EFB9 /* Pods-iMovie-acknowledgements.plist */,
-				89D448475C70667B72C443168444CC09 /* Pods-iMovie-dummy.m */,
-				9CBEA3A335DC1D2953DC72F2C896D118 /* Pods-iMovie-frameworks.sh */,
-				707EE93421EDF785B7419A9EA93B19F2 /* Pods-iMovie-Info.plist */,
-				0D5356E18789ADE0BA548DC804E05A41 /* Pods-iMovie-umbrella.h */,
-				6BC75BE9DD855D4594BDB13DB9EF1DB9 /* Pods-iMovie.debug.xcconfig */,
-				808A8C5222020C70A414EB7BE37D47DF /* Pods-iMovie.release.xcconfig */,
-			);
-			name = "Pods-iMovie";
-			path = "Target Support Files/Pods-iMovie";
 			sourceTree = "<group>";
 		};
 		FD68012ED64BAA5A0E0CFC8F411B03EF /* Support Files */ = {
@@ -647,6 +685,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA547D2E1987D9E95068B8646210E241 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7936921C8FB643235350AB56B08E06 /* Pods-iMovieService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D29FF6455545C2F4D0145EDD2FED44B6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -674,6 +720,24 @@
 			name = "lottie-ios";
 			productName = "lottie-ios";
 			productReference = 51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65944C628FB68B45A0F013FA3F931882 /* Pods-iMovieService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 572EA76FF6EAC9AD7AA411887AA69150 /* Build configuration list for PBXNativeTarget "Pods-iMovieService" */;
+			buildPhases = (
+				CA547D2E1987D9E95068B8646210E241 /* Headers */,
+				49E94E8315DD5B38903B256A0A1FB1F6 /* Sources */,
+				DCDA875D5653A6FB8636AEF8875C35D9 /* Frameworks */,
+				054F4786C01579F287231D95CF128B63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iMovieService";
+			productName = "Pods-iMovieService";
+			productReference = 58E9897CEEE93DA942F4C24A39F8125C /* Pods_iMovieService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		905C84EF04CBA444B6B109D802B1468B /* SSToastMessage */ = {
@@ -732,18 +796,26 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 802456A45D5980F60EA4A53C56171459 /* Products */;
+			productRefGroup = 909B6046CA3FB913427164799A31C3F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */,
 				D0CA30125077F0439F8BBF5088290255 /* Pods-iMovie */,
+				65944C628FB68B45A0F013FA3F931882 /* Pods-iMovieService */,
 				905C84EF04CBA444B6B109D802B1468B /* SSToastMessage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		054F4786C01579F287231D95CF128B63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7141B8BFD91321B48D2EC833C693184F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -917,6 +989,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49E94E8315DD5B38903B256A0A1FB1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459E8C0D225A6D947FAA61F865732CD7 /* Pods-iMovieService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FEDE0AADAAEE671DEC87F651FAE94D49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -943,9 +1023,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00713D2441EED34508F069262974812E /* Release */ = {
+		04867C82BFDBE4CC4FF4678F72FAF630 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 808A8C5222020C70A414EB7BE37D47DF /* Pods-iMovie.release.xcconfig */;
+			baseConfigurationReference = 2D5300261903D6A0A4C38571F55623C5 /* Pods-iMovieService.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -957,16 +1037,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iMovie/Pods-iMovie-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-iMovieService/Pods-iMovieService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iMovie/Pods-iMovie.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-iMovieService/Pods-iMovieService.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1016,9 +1096,9 @@
 			};
 			name = Debug;
 		};
-		1EEC6A02C1BACD2C682C6592A64A59FD /* Debug */ = {
+		146E659C74673EDAEEED8AB4B1FE4141 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC75BE9DD855D4594BDB13DB9EF1DB9 /* Pods-iMovie.debug.xcconfig */;
+			baseConfigurationReference = C1D67D5EE76A68D1E91D9539E57DDCAF /* Pods-iMovie.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1032,7 +1112,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-iMovie/Pods-iMovie-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1053,7 +1133,78 @@
 			};
 			name = Debug;
 		};
-		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+		1FE6D9202D961D62873637490A913C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5628780ECE1CA148673DE96496B9AA9F /* Pods-iMovieService.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iMovieService/Pods-iMovieService-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMovieService/Pods-iMovieService.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C977A0DF0369D6FA852FB68BD28B039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B8FDC0A9D6AC3F7EBD810829897DD7 /* lottie-ios.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
+				PRODUCT_MODULE_NAME = Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1106,7 +1257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1119,41 +1270,7 @@
 			};
 			name = Debug;
 		};
-		4C977A0DF0369D6FA852FB68BD28B039 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00B8FDC0A9D6AC3F7EBD810829897DD7 /* lottie-ios.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
-				PRODUCT_MODULE_NAME = Lottie;
-				PRODUCT_NAME = Lottie;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1203,7 +1320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1286,14 +1403,61 @@
 			};
 			name = Release;
 		};
+		FFA7989A6D3A1F85A4B21526D9F43C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D03C65DC518CB6CF29470AE26AB633 /* Pods-iMovie.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iMovie/Pods-iMovie-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMovie/Pods-iMovie.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
-				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		572EA76FF6EAC9AD7AA411887AA69150 /* Build configuration list for PBXNativeTarget "Pods-iMovieService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FE6D9202D961D62873637490A913C5A /* Debug */,
+				04867C82BFDBE4CC4FF4678F72FAF630 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1310,8 +1474,8 @@
 		D3A05745D809561B10AAF192C995E401 /* Build configuration list for PBXNativeTarget "Pods-iMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EEC6A02C1BACD2C682C6592A64A59FD /* Debug */,
-				00713D2441EED34508F069262974812E /* Release */,
+				146E659C74673EDAEEED8AB4B1FE4141 /* Debug */,
+				FFA7989A6D3A1F85A4B21526D9F43C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
