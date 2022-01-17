@@ -1,10 +1,3 @@
-//
-//  LoginViewModel.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 08/01/2022.
-//
-
 import Combine
 import Foundation
 import iMovieService

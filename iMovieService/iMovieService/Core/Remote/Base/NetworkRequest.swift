@@ -10,28 +10,28 @@ public struct NetworkRequest {
     public init(
         url: String,
         headers: [String: String]? = nil,
-        reqBody: Encodable? = nil,
-        reqTimeout: Float? = nil,
+        requestBody: Encodable? = nil,
+        requestTimeout: Float? = nil,
         httpMethod: HTTPMethod
     ) {
         self.url = url
         self.headers = headers
-        self.body = reqBody?.encode()
-        self.requestTimeOut = reqTimeout
+        self.body = requestBody?.encode()
+        self.requestTimeOut = requestTimeout
         self.httpMethod = httpMethod
     }
 
     public init(
         url: String,
         headers: [String: String]? = nil,
-        reqBody: Data? = nil,
-        reqTimeout: Float? = nil,
+        requestBody: Data? = nil,
+        requestTimeout: Float? = nil,
         httpMethod: HTTPMethod
     ) {
         self.url = url
         self.headers = headers
-        self.body = reqBody
-        self.requestTimeOut = reqTimeout
+        self.body = requestBody
+        self.requestTimeOut = requestTimeout
         self.httpMethod = httpMethod
     }
 

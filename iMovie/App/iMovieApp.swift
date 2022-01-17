@@ -18,12 +18,7 @@ struct iMovieApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if appState.hasOnboarded {
-                LoginView()
-            } else {
-                SplashView()
-                    .environmentObject(appState)
-            }
+            HomeView()
         }
     }
 }

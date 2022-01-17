@@ -9,7 +9,7 @@
 import SwiftUI
 
 extension View {
-
+    
     ///  Add this modifier to the top most  views in hierarchy.
     ///  Parameters:
     ///   - isPresented: binding to determine if the message view should be seen on-screen or hidden
@@ -31,8 +31,7 @@ extension View {
         closeOnTap: Bool = true,
         onTap: (() -> Void)? = nil,
         closeOnTapOutside: Bool = false,
-        view: @escaping () -> MessageContent
-    ) -> some View {
+        view: @escaping () -> MessageContent) -> some View {
         self.modifier(
             MessageView(
                 isPresented: isPresented,
@@ -46,7 +45,7 @@ extension View {
                 view: view)
         )
     }
-
+    
     func applyIf<T: View>(_ condition: @autoclosure () -> Bool, apply: (Self) -> T) -> AnyView {
         if condition() {
             return AnyView(apply(self))

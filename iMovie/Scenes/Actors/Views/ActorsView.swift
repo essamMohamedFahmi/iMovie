@@ -7,31 +7,18 @@
 
 import Combine
 import SwiftUI
-import iMovieService
 
 struct ActorsView: View {
 
-    var subscriptions = Set<AnyCancellable>()
+    // MARK: - Properties
+
+    @ObservedObject private var actorsViewModel = ActorsViewModel()
 
     // MARK: - Init
 
     init() {
         UITableView.appearance().backgroundColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
-
-        let service = ActorsService()
-        service.getActors()
-            .sink { completion in
-                switch completion {
-                case let .failure(error):
-                    print("oops got an error \(error.localizedDescription)")
-                case .finished:
-                    print("nothing much to do here")
-                }
-            } receiveValue: { response in
-                print("got my response here \(response)")
-            }
-            .store(in: &subscriptions)
     }
 
     // MARK: - Body
@@ -42,24 +29,44 @@ struct ActorsView: View {
                 .padding(.horizontal, 15)
                 .background(.clear)
 
-            List {
-                ActorView(
-                    name: "Tom Holland", profile: "actor", popularMovie: "Avengers: Infinity War",
-                    gender: "male", popularity: "145.03"
-                )
-                .listRowBackground(Color.clear)
-                .frame(height: 150)
-
-                ActorView(
-                    name: "Tom Holland", profile: "actor", popularMovie: "Avengers: Infinity War",
-                    gender: "male", popularity: "145.03"
-                )
-                .listRowBackground(Color.clear)
-                .frame(height: 150)
+            List(actorsViewModel.actors) {
+                ActorView(actorViewModel: $0)
+                    .listRowBackground(Color.clear)
+                    .frame(height: 150)
             }
 
             Spacer()
         }
+        .present(isPresented: $actorsViewModel.error, type: .toast, position: .top) {
+            self.createToast(with: actorsViewModel.errorMessage)
+        }
+        .onAppear {
+            self.actorsViewModel.fetchActors()
+        }
+    }
+
+    // MARK: - Methods
+
+    func createToast(with message: String) -> some View {
+        VStack {
+            Spacer()
+
+            HStack {
+                Text(message)
+                    .font(.iMovieRegular(14))
+                    .foregroundColor(.white)
+                    .padding()
+
+                Spacer()
+            }
+        }
+        .frame(width: UIScreen.main.bounds.width, height: 85)
+        .background(
+            LinearGradient(
+                gradient: Gradient(colors: [Color.iMovieBlue, Color.iMoviePurpure]),
+                startPoint: .leading,
+                endPoint: .trailing)
+        )
     }
 }
 

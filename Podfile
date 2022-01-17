@@ -16,4 +16,5 @@ target 'iMovie' do
   # pods used only in iMovie
   pod 'lottie-ios'
   pod 'SSToastMessage'
+  pod 'SDWebImageSwiftUI'
 end

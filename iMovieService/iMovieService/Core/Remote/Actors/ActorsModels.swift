@@ -3,12 +3,13 @@ import Foundation
 // MARK: - ActorsResponse
 
 public struct ActorsResponse: Codable {
-    let page: Int
-    let results: [Actor]
-    let totalPages, totalResults: Int
+    public let page: Int
+    public let actors: [Actor]
+    public let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
-        case page, results
+        case page
+        case actors = "results"
         case totalPages = "total_pages"
         case totalResults = "total_results"
     }
@@ -17,13 +18,13 @@ public struct ActorsResponse: Codable {
 // MARK: - Actor
 
 public struct Actor: Codable {
-    let adult: Bool
-    let gender, id: Int
-    let knownFor: [KnownFor]
-    let knownForDepartment: KnownForDepartment
-    let name: String
-    let popularity: Double
-    let profilePath: String?
+    public let adult: Bool
+    public let gender, id: Int
+    public let knownFor: [KnownFor]
+    public let knownForDepartment: KnownForDepartment
+    public let name: String
+    public let popularity: Double
+    public let profilePath: String?
 
     enum CodingKeys: String, CodingKey {
         case adult, gender, id
@@ -37,20 +38,20 @@ public struct Actor: Codable {
 // MARK: - KnownFor
 
 public struct KnownFor: Codable {
-    let backdropPath, firstAirDate: String?
-    let genreIDS: [Int]
-    let id: Int
-    let mediaType: MediaType
-    let name: String?
-    let originCountry: [String]?
-    let originalLanguage: OriginalLanguage
-    let originalName: String?
-    let overview, posterPath: String
-    let voteAverage: Double
-    let voteCount: Int
-    let adult: Bool?
-    let originalTitle, releaseDate, title: String?
-    let video: Bool?
+    public let backdropPath, firstAirDate: String?
+    public let genreIDS: [Int]
+    public let id: Int
+    public let mediaType: MediaType
+    public let name: String?
+    public let originCountry: [String]?
+    public let originalLanguage: OriginalLanguage
+    public let originalName: String?
+    public let overview, posterPath: String
+    public let voteAverage: Double
+    public let voteCount: Int
+    public let adult: Bool?
+    public let originalTitle, releaseDate, title: String?
+    public let video: Bool?
 
     enum CodingKeys: String, CodingKey {
         case backdropPath = "backdrop_path"

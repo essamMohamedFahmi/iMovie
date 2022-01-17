@@ -44,6 +44,9 @@
 		CEC3F16E278BB421006588FE /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3F16D278BB421006588FE /* TabBarIcon.swift */; };
 		CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806DF2788D11600207F38 /* GradientBackground.swift */; };
 		CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC806E22788D22F00207F38 /* FancyTextField.swift */; };
+		CEF514FF27962941007EF272 /* ActorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF514FE27962941007EF272 /* ActorsViewModel.swift */; };
+		CEF5150327962AB9007EF272 /* ActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF5150227962AB9007EF272 /* ActorViewModel.swift */; };
+		CEF515062796346C007EF272 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF515052796346C007EF272 /* URLImage.swift */; };
 		CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF85F632777A82B00517ED7 /* iMovieApp.swift */; };
 		CEF85F662777A82B00517ED7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF85F652777A82B00517ED7 /* SplashView.swift */; };
 		CEF85F682777A82D00517ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF85F672777A82D00517ED7 /* Assets.xcassets */; };
@@ -118,6 +121,9 @@
 		CEC3F16D278BB421006588FE /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
 		CEC806DF2788D11600207F38 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		CEC806E22788D22F00207F38 /* FancyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
+		CEF514FE27962941007EF272 /* ActorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsViewModel.swift; sourceTree = "<group>"; };
+		CEF5150227962AB9007EF272 /* ActorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorViewModel.swift; sourceTree = "<group>"; };
+		CEF515052796346C007EF272 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		CEF85F602777A82B00517ED7 /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF85F632777A82B00517ED7 /* iMovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieApp.swift; sourceTree = "<group>"; };
 		CEF85F652777A82B00517ED7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -237,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				CE18CC4027933E1700D4FC1B /* Views */,
+				CEF5150027962A8E007EF272 /* Models */,
+				CEF5150127962A94007EF272 /* View Models */,
 			);
 			path = Actors;
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 				CEC806E22788D22F00207F38 /* FancyTextField.swift */,
 				CEFC36CD278A480F00BB42A7 /* PasswordTextField.swift */,
 				1D8BE063278C497000BE7624 /* NavigationBarView.swift */,
+				CEF515052796346C007EF272 /* URLImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +382,22 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		CEF5150027962A8E007EF272 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5150227962AB9007EF272 /* ActorViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEF5150127962A94007EF272 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEF514FE27962941007EF272 /* ActorsViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		CEF85F572777A82B00517ED7 = {
 			isa = PBXGroup;
 			children = (
@@ -426,7 +451,6 @@
 				CEF85F5C2777A82B00517ED7 /* Sources */,
 				CEF85F5D2777A82B00517ED7 /* Frameworks */,
 				CEF85F5E2777A82B00517ED7 /* Resources */,
-				CEC806DD2788C0BC00207F38 /* Swift Format */,
 				25E1D024610EF24BF69BCDF6 /* [CP] Embed Pods Frameworks */,
 				CE5E89D8279393A4000F3890 /* Copy Frameworks */,
 			);
@@ -531,24 +555,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CEC806DD2788C0BC00207F38 /* Swift Format */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Swift Format";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ $ENABLE_PREVIEWS == \"NO\" ]\nthen\n  if which swift-format >/dev/null; then\n    swift-format -m format -i --configuration swiftFormatConfiguration.json -r ${PROJECT_DIR}\nelse\n    echo \"warning: swift-format not installed\"\nfi\nelse\n  echo \"Skipping the script because of preview mode\"\nfi\n";
-		};
 		E75D6AA3E33807E0F6221C55 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,6 +588,7 @@
 				1D8BE069278C4AFC00BE7624 /* MoviesView.swift in Sources */,
 				1DDAA3522778FEF200BDAE2B /* ProfileView.swift in Sources */,
 				1D8BE064278C497000BE7624 /* NavigationBarView.swift in Sources */,
+				CEF5150327962AB9007EF272 /* ActorViewModel.swift in Sources */,
 				CEFC36CE278A480F00BB42A7 /* PasswordTextField.swift in Sources */,
 				1D8BE066278C4A3500BE7624 /* CategoryPickerView.swift in Sources */,
 				CEC3F16E278BB421006588FE /* TabBarIcon.swift in Sources */,
@@ -591,11 +598,13 @@
 				1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */,
 				CEC806E02788D11600207F38 /* GradientBackground.swift in Sources */,
 				CEC806E32788D22F00207F38 /* FancyTextField.swift in Sources */,
+				CEF515062796346C007EF272 /* URLImage.swift in Sources */,
 				1D8565DC278B26F9003B529A /* HomeView.swift in Sources */,
 				CE41C164277E20A9009E4FF6 /* AppState.swift in Sources */,
 				1D8565DE278B3FA2003B529A /* PageRouter.swift in Sources */,
 				1DB0AFE42783A335006779D5 /* View+Placeholder.swift in Sources */,
 				1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */,
+				CEF514FF27962941007EF272 /* ActorsViewModel.swift in Sources */,
 				CE18CC44279350C100D4FC1B /* ActorsView.swift in Sources */,
 				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
 				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,

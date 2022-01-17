@@ -28,7 +28,7 @@ enum ActorsServiceEndpoints {
             headers["Authorization"] = "Bearer \(token)"
         }
         return NetworkRequest(
-            url: getURL(), headers: headers, reqBody: requestBody, httpMethod: httpMethod)
+            url: getURL(), headers: headers, requestBody: requestBody, httpMethod: httpMethod)
     }
 
     // encodable request body for POST
@@ -41,10 +41,10 @@ enum ActorsServiceEndpoints {
 
     // compose urls for each request
     func getURL() -> String {
-        let baseUrl = "https://api.themoviedb.org/3/"
+        let baseUrl = "https://api.themoviedb.org/3"
         switch self {
         case .getActors:
-            return "\(baseUrl)/person/popular?api_key=\(TMDBKeys.apiKey)&language=en-US&page=1"
+            return "\(baseUrl)/person/popular?api_key=\(TMDBKeys.apiKey)&language=en-US"
         }
     }
 }

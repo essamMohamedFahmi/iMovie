@@ -1,28 +1,15 @@
-//
-//  ActorView.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 15/01/2022.
-//
-
 import SwiftUI
 
 struct ActorView: View {
 
     // MARK: - Properties
 
-    var name: String
-    var profile: String
-    var popularMovie: String
-    var gender: String
-    var popularity: String
+    var actorViewModel: ActorViewModel
 
     // MARK: - View Components
 
     var profileImage: some View {
-        Image(profile)
-            .resizable()
-            .scaledToFit()
+        URLImage(url: actorViewModel.profileImage)
             .frame(width: 80, height: 120)
             .cornerRadius(10)
             .overlay(
@@ -40,7 +27,7 @@ struct ActorView: View {
     }
 
     var nameText: some View {
-        Text(name)
+        Text(actorViewModel.name)
             .font(.iMovieBold(15))
             .foregroundColor(.white)
             .lineLimit(1)
@@ -48,20 +35,20 @@ struct ActorView: View {
     }
 
     var genderText: some View {
-        Text(gender)
+        Text(actorViewModel.gender)
             .font(.iMovieRegular(15))
             .foregroundColor(.white)
     }
 
     var popularMovieText: some View {
-        Text(popularMovie)
+        Text(actorViewModel.popularMovie)
             .font(.iMovieRegular(15))
             .minimumScaleFactor(0.5)
             .foregroundColor(.white)
     }
 
     var popularityText: some View {
-        Text(popularity)
+        Text(actorViewModel.popularity)
             .font(.iMovieBold(15))
             .foregroundColor(.white)
             .padding([.top, .trailing], 15)
@@ -108,9 +95,7 @@ struct ActorView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             BackgroundView()
-            ActorView(
-                name: "Tom Holland", profile: "actor", popularMovie: "Avengers: Infinity War",
-                gender: "male", popularity: "145.03")
+            ActorView(actorViewModel: ActorViewModel(name: "Test", gender: "Test", popularity: "123", profileImage: URL(string: "")!, popularMovie: "Test"))
         }
     }
 }

@@ -37,17 +37,14 @@ public class Requestable: NetworkRequestable {
         return URLSession.shared
             .dataTaskPublisher(for: request.buildURLRequest(with: url))
             .tryMap { output in
-                // throw an error if response is nil
                 guard output.response is HTTPURLResponse else {
                     throw NetworkError.serverError(code: 0, error: "Server error")
                 }
-                print(String(data: output.data, encoding: .utf8))
                 return output.data
             }
+            .receive(on: RunLoop.main)
             .decode(type: T.self, decoder: JSONDecoder())
             .mapError { error in
-                print(error.localizedDescription)
-                // return error if json decoding fails
                 return NetworkError.invalidJSON(String(describing: error))
             }
             .eraseToAnyPublisher()
