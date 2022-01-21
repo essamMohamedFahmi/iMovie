@@ -13,7 +13,6 @@ public class ActorsService: ActorsServiceable {
 
     // MARK: - Init
 
-    // inject this for testability
     public init(networkRequest: NetworkRequestable = Requestable()) {
         self.networkRequest = networkRequest
     }

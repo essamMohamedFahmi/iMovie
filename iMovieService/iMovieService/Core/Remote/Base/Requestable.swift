@@ -27,13 +27,11 @@ public class Requestable: NetworkRequestable {
             request.requestTimeOut ?? requestTimeOut)
 
         guard let url = URL(string: request.url) else {
-            // Return a fail publisher if the url is invalid
             return AnyPublisher(
                 Fail<T, NetworkError>(error: NetworkError.badURL("Invalid Url"))
             )
         }
 
-        // We use the dataTaskPublisher from the URLSession which gives us a publisher to play around with.
         return URLSession.shared
             .dataTaskPublisher(for: request.buildURLRequest(with: url))
             .tryMap { output in

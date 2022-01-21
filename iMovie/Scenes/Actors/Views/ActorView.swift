@@ -22,7 +22,8 @@ struct ActorView: View {
                             blue: 150 / 255,
                             opacity: 0.1), lineWidth: 1)
             )
-            .padding([.leading], 20)
+            .padding(.leading, 20)
+            .padding(.trailing, 15)
             .offset(x: 0, y: -25)
     }
 
@@ -51,7 +52,8 @@ struct ActorView: View {
         Text(actorViewModel.popularity)
             .font(.iMovieBold(15))
             .foregroundColor(.white)
-            .padding([.top, .trailing], 15)
+            .padding(.top, 15)
+            .padding(.trailing, 5)
     }
 
     // MARK: - Body
@@ -68,10 +70,10 @@ struct ActorView: View {
             )
             .cornerRadius(10)
             .overlay(
-                HStack(spacing: 20) {
+                HStack {
                     profileImage
 
-                    HStack(spacing: 15) {
+                    HStack {
                         VStack(alignment: .leading) {
                             nameText
                             genderText
@@ -80,11 +82,15 @@ struct ActorView: View {
                         }
                         .padding(.top, 15)
 
+                        Spacer()
+
                         VStack {
                             popularityText
                             Spacer()
                         }
                     }
+
+                    Spacer()
                 }
             )
             .padding(.top, 35)
