@@ -4,12 +4,11 @@ import Foundation
 
 public struct ActorsResponse: Codable {
     public let page: Int
-    public let actors: [Actor]
+    public let results: [Actor]
     public let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
-        case page
-        case actors = "results"
+        case page, results
         case totalPages = "total_pages"
         case totalResults = "total_results"
     }
@@ -38,7 +37,8 @@ public struct Actor: Codable {
 // MARK: - KnownFor
 
 public struct KnownFor: Codable {
-    public let backdropPath, firstAirDate: String?
+    public let backdropPath: String
+    public let firstAirDate: String?
     public let genreIDS: [Int]
     public let id: Int
     public let mediaType: MediaType
@@ -81,7 +81,7 @@ public enum MediaType: String, Codable {
 
 public enum OriginalLanguage: String, Codable {
     case en = "en"
-    case te = "te"
+    case fr = "fr"
 }
 
 public enum KnownForDepartment: String, Codable {

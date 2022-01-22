@@ -1,11 +1,11 @@
 import Combine
 import SwiftUI
 
-struct ActorsView: View {
+struct SearchView: View {
 
     // MARK: - Properties
 
-    @ObservedObject private var actorsViewModel = ActorsViewModel()
+    @ObservedObject private var searchViewModel = SearchViewModel()
 
     // MARK: - Init
 
@@ -18,23 +18,17 @@ struct ActorsView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            NavigationBarView(title: "Actors")
+            NavigationBarView(title: "Search")
                 .padding(.horizontal, 15)
                 .background(.clear)
 
-            List(actorsViewModel.actors) {
-                ActorView(actorViewModel: $0)
-                    .listRowBackground(Color.clear)
-                    .frame(height: 150)
-            }
-
             Spacer()
         }
-        .present(isPresented: $actorsViewModel.error, type: .toast, position: .top) {
-            self.createToast(with: actorsViewModel.errorMessage)
+        .present(isPresented: $searchViewModel.error, type: .toast, position: .top) {
+            self.createToast(with: searchViewModel.errorMessage)
         }
         .onAppear {
-            self.actorsViewModel.fetchActors()
+            //
         }
     }
 
@@ -63,11 +57,11 @@ struct ActorsView: View {
     }
 }
 
-struct ActorsView_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             BackgroundView()
-            ActorsView()
+            SearchView()
         }
     }
 }

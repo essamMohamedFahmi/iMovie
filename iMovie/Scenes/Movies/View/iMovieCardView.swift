@@ -1,10 +1,3 @@
-//
-//  iMovieCardView.swift
-//  iMovie
-//
-//  Created by MorsyElsokary on 04/01/2022.
-//
-
 import SwiftUI
 
 struct iMovieCardView: View {

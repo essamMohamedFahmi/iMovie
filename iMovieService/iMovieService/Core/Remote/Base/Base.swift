@@ -1,5 +1,7 @@
 import Foundation
 
+typealias Headers = [String: String]
+
 enum TMDBKeys {
     static let apiKey = "0239a6b8c4fdde147e59540aa782d0cf"
 }

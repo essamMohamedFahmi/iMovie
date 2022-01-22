@@ -10,13 +10,14 @@ import SwiftUI
 struct GradientBackground: ButtonStyle {
 
     var height: CGFloat
+    var width: CGFloat = .infinity
     var hPadding: CGFloat = 30
     var cornerRadius: CGFloat = 25
 
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .padding()
-            .frame(minWidth: 0, maxWidth: .infinity)
+            .frame(minWidth: 0, maxWidth: width)
             .frame(height: height)
             .foregroundColor(.white)
             .background(

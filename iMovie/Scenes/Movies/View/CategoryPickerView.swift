@@ -1,10 +1,3 @@
-//
-//  CategoryPickerView.swift
-//  iMovie
-//
-//  Created by MorsyElsokary on 08/01/2022.
-//
-
 import SwiftUI
 
 enum MovieCategory: String, CaseIterable {

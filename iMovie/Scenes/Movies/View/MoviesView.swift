@@ -1,10 +1,3 @@
-//
-//  MoviesView.swift
-//  iMovie
-//
-//  Created by MorsyElsokary on 08/01/2022.
-//
-
 import SwiftUI
 
 struct MoviesView: View {

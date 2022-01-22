@@ -1,8 +1,8 @@
 import Foundation
 
-enum ActorsServiceEndpoints {
+enum SearchServiceEndpoints {
 
-    case getActors
+    case searchMovies(query: String)
 
     var requestTimeOut: Int {
         return 20
@@ -10,7 +10,7 @@ enum ActorsServiceEndpoints {
 
     var httpMethod: HTTPMethod {
         switch self {
-        case .getActors:
+        case .searchMovies:
             return .GET
         }
     }
@@ -35,8 +35,8 @@ enum ActorsServiceEndpoints {
     func getURL() -> String {
         let baseUrl = "https://api.themoviedb.org/3"
         switch self {
-        case .getActors:
-            return "\(baseUrl)/person/popular?api_key=\(TMDBKeys.apiKey)&language=en-US&page=1"
+        case .searchMovies(let query):
+            return "\(baseUrl)/search/movie?api_key=\(TMDBKeys.apiKey)&language=en-USquery=\(query)&page=1"
         }
     }
 }

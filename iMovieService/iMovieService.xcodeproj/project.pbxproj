@@ -16,6 +16,9 @@
 		CE5E89ED2793AC73000F3890 /* ActorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E89EC2793AC73000F3890 /* ActorsService.swift */; };
 		CE5E89EF2793AD86000F3890 /* ActorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E89EE2793AD86000F3890 /* ActorsModels.swift */; };
 		CE5E89F22793B0C8000F3890 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E89F12793B0C8000F3890 /* UserService.swift */; };
+		CEA2A043279C90A000A0262F /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2A040279C90A000A0262F /* SearchService.swift */; };
+		CEA2A044279C90A000A0262F /* SearchServiceEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2A041279C90A000A0262F /* SearchServiceEndpoints.swift */; };
+		CEA2A045279C90A000A0262F /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2A042279C90A000A0262F /* SearchModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		CE5E89EC2793AC73000F3890 /* ActorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsService.swift; sourceTree = "<group>"; };
 		CE5E89EE2793AD86000F3890 /* ActorsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsModels.swift; sourceTree = "<group>"; };
 		CE5E89F12793B0C8000F3890 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CEA2A040279C90A000A0262F /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		CEA2A041279C90A000A0262F /* SearchServiceEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchServiceEndpoints.swift; sourceTree = "<group>"; };
+		CEA2A042279C90A000A0262F /* SearchModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
 		E63E0D90B2DC4A59AEFD9D35 /* Pods-iMovieService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovieService.release.xcconfig"; path = "Target Support Files/Pods-iMovieService/Pods-iMovieService.release.xcconfig"; sourceTree = "<group>"; };
 		FB982D5CAF027B42FF62BE7F /* Pods-iMovieService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovieService.debug.xcconfig"; path = "Target Support Files/Pods-iMovieService/Pods-iMovieService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CE5E89E2279394E8000F3890 /* Base */,
+				CEA2A03F279C905500A0262F /* Search */,
 				CE5E89E52793955D000F3890 /* Actors */,
 				CE5E89F02793B09A000F3890 /* User */,
 			);
@@ -132,6 +139,16 @@
 				CE5E89E1279394C6000F3890 /* Remote */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		CEA2A03F279C905500A0262F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CEA2A042279C90A000A0262F /* SearchModels.swift */,
+				CEA2A040279C90A000A0262F /* SearchService.swift */,
+				CEA2A041279C90A000A0262F /* SearchServiceEndpoints.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		FCBA839599EA0E71B575395F /* Pods */ = {
@@ -253,10 +270,13 @@
 				CE5E89F22793B0C8000F3890 /* UserService.swift in Sources */,
 				CE5E89EB2793AB96000F3890 /* Base.swift in Sources */,
 				CE5E89E72793A90A000F3890 /* NetworkRequest.swift in Sources */,
+				CEA2A044279C90A000A0262F /* SearchServiceEndpoints.swift in Sources */,
 				CE5E89ED2793AC73000F3890 /* ActorsService.swift in Sources */,
 				CE5E89EF2793AD86000F3890 /* ActorsModels.swift in Sources */,
+				CEA2A043279C90A000A0262F /* SearchService.swift in Sources */,
 				CE5E89E92793A9FD000F3890 /* ActorsServiceEndpoints.swift in Sources */,
 				CE5E89E427939500000F3890 /* Requestable.swift in Sources */,
+				CEA2A045279C90A000A0262F /* SearchModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,14 +34,19 @@ class ActorsViewModel: ObservableObject {
 
     func fetchActors() {
         service.getActors()
-            .sink { [weak self] completion in
-                if case let .failure(error) = completion {
-                    self?.errorMessage = error.localizedDescription
-                }
-            } receiveValue: { [weak self] response in
-                self?.actors = response.actors
-                    .compactMap { ActorViewModel.build(from: $0) }
-            }
+            .sink(receiveCompletion: onReceive, receiveValue: onReceive)
             .store(in: &cancellableSet)
+    }
+
+    // MARK: - Private Methods
+
+    private func onReceive(_ completion: Subscribers.Completion<NetworkError>) {
+        if case let .failure(error) = completion {
+            errorMessage = error.localizedDescription
+        }
+    }
+
+    private func onReceive(_ response: ActorsResponse) {
+        actors = response.results.compactMap { ActorViewModel.build(from: $0) }
     }
 }
