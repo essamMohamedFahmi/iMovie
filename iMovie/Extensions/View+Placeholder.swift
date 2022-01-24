@@ -1,10 +1,3 @@
-//
-//  View+Placeholder.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 03/01/2022.
-//
-
 import SwiftUI
 
 extension View {
@@ -12,11 +5,12 @@ extension View {
         _ text: String,
         when shouldShow: Bool,
         alignment: Alignment = .leading,
-        padding: CGFloat = 20
+        padding: CGFloat = 20,
+        color: Color = Color.white
     ) -> some View {
         placeholder(when: shouldShow, alignment: alignment) {
             Text(text)
-                .foregroundColor(.white)
+                .foregroundColor(color)
                 .padding([.trailing, .leading], padding)
         }
     }

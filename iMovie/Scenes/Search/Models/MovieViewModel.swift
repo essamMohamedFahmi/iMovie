@@ -9,7 +9,7 @@ struct MovieViewModel: Identifiable {
     let rate: Double
     let voteCount: Int
     let releaseDate: String
-    let posterImage: URL?
+    let posterImage: URL
 }
 
 extension MovieViewModel {

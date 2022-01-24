@@ -37,8 +37,7 @@ struct LoginView: View {
     private var credentialsFields: some View {
         VStack(spacing: 30) {
             FancyTextField(
-                header: "Username", placeholder: "Enter your username",
-                text: $loginViewModel.username)
+                text: $loginViewModel.username, spacing: 20, header: "Username", headerTextColor: .iMovieRose, placeholder: "Enter your username")
 
             PasswordTextField(text: $loginViewModel.password, isSecure: true)
         }

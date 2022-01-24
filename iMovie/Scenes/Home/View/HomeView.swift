@@ -45,9 +45,7 @@ struct HomeView: View {
             ActorsView()
 
         case .search:
-            Text("Search")
-                .font(.iMovieBold(40))
-                .foregroundColor(.iMovieRose)
+            SearchView()
         }
     }
 

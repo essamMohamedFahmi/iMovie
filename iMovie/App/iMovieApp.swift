@@ -18,7 +18,7 @@ struct iMovieApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            LoginView()
         }
     }
 }

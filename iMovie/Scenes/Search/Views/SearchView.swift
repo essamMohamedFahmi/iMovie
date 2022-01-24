@@ -14,46 +14,48 @@ struct SearchView: View {
         UITableViewCell.appearance().backgroundColor = .clear
     }
 
+    // MARK: - View Components
+
+    private var searchBar: some View {
+        FancyTextField(text: $searchViewModel.searchText, textColor: .white, textSize: 17, spacing: 5, textTopBottomPadding: 10, placeholder: "Search...", placeholderTextColor: .gray, leftImageName: "magnifyingglass", leftImageColor: .gray, leftImagePadding: 20, borderWidth: 2, enableMatching: true)
+            .padding(.top, 25)
+            .padding([.leading, .trailing], 30)
+    }
+
     // MARK: - Body
 
     var body: some View {
-        VStack(spacing: 0) {
-            NavigationBarView(title: "Search")
-                .padding(.horizontal, 15)
-                .background(.clear)
+        ZStack {
+            VStack(spacing: 0) {
+                NavigationBarView(title: "Search")
+                    .padding(.horizontal, 15)
+                    .background(.clear)
 
-            Spacer()
-        }
-        .present(isPresented: $searchViewModel.error, type: .toast, position: .top) {
-            self.createToast(with: searchViewModel.errorMessage)
-        }
-        .onAppear {
-            //
-        }
-    }
+                searchBar
 
-    // MARK: - Methods
-
-    func createToast(with message: String) -> some View {
-        VStack {
-            Spacer()
-
-            HStack {
-                Text(message)
-                    .font(.iMovieRegular(14))
-                    .foregroundColor(.white)
-                    .padding()
+                List(searchViewModel.movies) {
+                    SearchMovieCardView(movieViewModel: $0)
+                        .listRowBackground(Color.clear)
+                        .frame(height: 120)
+                        .padding(.bottom, 20)
+                }
 
                 Spacer()
             }
+
+            if searchViewModel.isSearching {
+                LoadingCircle(width: 30, height: 30, color: .iMovieBlue)
+            }
         }
-        .frame(width: UIScreen.main.bounds.width, height: 85)
-        .background(
-            LinearGradient(
-                gradient: Gradient(colors: [Color.iMovieBlue, Color.iMoviePurpure]),
-                startPoint: .leading,
-                endPoint: .trailing)
-        )
+        .onTapGesture {
+            self.endEditing()
+        }
+    }
+
+    // MARK: - Private Methods
+
+    private func endEditing() {
+        UIApplication.shared.endEditing()
     }
 }
 
@@ -63,5 +65,11 @@ struct SearchView_Previews: PreviewProvider {
             BackgroundView()
             SearchView()
         }
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

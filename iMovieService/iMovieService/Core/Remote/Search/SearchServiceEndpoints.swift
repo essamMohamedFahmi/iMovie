@@ -36,7 +36,7 @@ enum SearchServiceEndpoints {
         let baseUrl = "https://api.themoviedb.org/3"
         switch self {
         case .searchMovies(let query):
-            return "\(baseUrl)/search/movie?api_key=\(TMDBKeys.apiKey)&language=en-USquery=\(query)&page=1"
+            return "\(baseUrl)/search/movie?api_key=\(TMDBKeys.apiKey)&language=en-US&query=\(query)&page=1"
         }
     }
 }

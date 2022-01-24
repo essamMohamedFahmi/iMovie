@@ -12,6 +12,6 @@ struct URLImage: View {
     var body: some View {
         WebImage(url: url)
             .resizable()
-            .scaledToFit()
+            .aspectRatio(contentMode: .fill)
     }
 }

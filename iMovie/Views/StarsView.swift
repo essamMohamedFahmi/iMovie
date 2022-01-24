@@ -54,7 +54,7 @@ struct StarsView: View {
     // MARK:- Body
 
     var body: some View {
-        HStack {
+        HStack(spacing: 2) {
             ForEach(0 ..< fullCount) { _ in
                 self.fullStar
             }
