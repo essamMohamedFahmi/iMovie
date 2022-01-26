@@ -11,7 +11,27 @@ struct HomeView: View {
 
     // MARK: - Properties
 
+    @EnvironmentObject var appState: AppState
     @StateObject var pageRouter = PageRouter(currentPage: .movies)
+
+    // MARK: - View Components
+
+    var tabBar: some View {
+        HStack {
+            TabBarIcon(pageRouter: pageRouter, systemIconName: "film", page: .movies)
+
+            Spacer()
+
+            TabBarIcon(pageRouter: pageRouter, systemIconName: "person.3", page: .actors)
+
+            Spacer()
+
+            TabBarIcon(pageRouter: pageRouter, systemIconName: "magnifyingglass", page: .search)
+        }
+        .frame(height: 30)
+        .padding([.trailing, .leading], 20)
+        .background(.clear)
+    }
 
     // MARK: - Body
 
@@ -19,16 +39,14 @@ struct HomeView: View {
         ZStack {
             BackgroundView()
 
-            GeometryReader { geometry in
-                VStack {
-                    Spacer()
+            VStack {
+                Spacer()
 
-                    currentPage()
+                currentPage()
 
-                    Spacer()
+                Spacer()
 
-                    tabBar(geometry: geometry)
-                }
+                tabBar
             }
         }
     }
@@ -47,29 +65,6 @@ struct HomeView: View {
         case .search:
             SearchView()
         }
-    }
-
-    @ViewBuilder
-    private func tabBar(geometry: GeometryProxy) -> some View {
-        HStack {
-            TabBarIcon(
-                pageRouter: pageRouter, width: geometry.size.width / 4,
-                height: geometry.size.height / 28, systemIconName: "film", page: .movies)
-
-            Spacer()
-
-            TabBarIcon(
-                pageRouter: pageRouter, width: geometry.size.width / 4,
-                height: geometry.size.height / 28, systemIconName: "person.3", page: .actors)
-
-            Spacer()
-
-            TabBarIcon(
-                pageRouter: pageRouter, width: geometry.size.width / 4,
-                height: geometry.size.height / 28, systemIconName: "magnifyingglass", page: .search)
-        }
-        .frame(width: geometry.size.width, height: geometry.size.height / 13)
-        .background(.clear)
     }
 }
 

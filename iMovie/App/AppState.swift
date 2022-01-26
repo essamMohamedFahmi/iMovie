@@ -1,21 +1,14 @@
-//
-//  AppState.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 30/12/2021.
-//
-
 import Foundation
+
+enum AppRoot {
+    case lunching
+    case authentication
+    case home
+}
 
 class AppState: ObservableObject {
 
     // MARK: - Properties
 
-    @Published var hasOnboarded: Bool
-
-    // MARK: - Init
-
-    init(hasOnboarded: Bool) {
-        self.hasOnboarded = hasOnboarded
-    }
+    @Published var currentRoot: AppRoot = .lunching
 }

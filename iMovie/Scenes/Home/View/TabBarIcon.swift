@@ -1,10 +1,3 @@
-//
-//  TabBarIcon.swift
-//  iMovie
-//
-//  Created by Essam Fahmi on 10/01/2022.
-//
-
 import SwiftUI
 
 struct TabBarIcon: View {
@@ -13,8 +6,6 @@ struct TabBarIcon: View {
 
     @StateObject var pageRouter: PageRouter
 
-    let width: CGFloat
-    let height: CGFloat
     let systemIconName: String
     var page: HomePage
 
@@ -28,7 +19,7 @@ struct TabBarIcon: View {
                 endPoint: .top
             )
             .mask(Image(systemName: systemIconName))
-            .frame(width: width, height: height)
+            .frame(width: 30, height: 30)
             .aspectRatio(contentMode: .fit)
             .padding()
         }

@@ -36,7 +36,7 @@ struct SplashView: View {
         // Delay of 2 seconds (1 second = 1_000_000_000 nanoseconds)
         try? await Task.sleep(nanoseconds: 2_000_000_000)
         DispatchQueue.main.async {
-            appState.hasOnboarded = true
+            appState.currentRoot = .authentication
         }
     }
 }

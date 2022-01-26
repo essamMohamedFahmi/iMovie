@@ -18,7 +18,8 @@ struct SearchView: View {
 
     private var searchBar: some View {
         FancyTextField(text: $searchViewModel.searchText, textColor: .white, textSize: 17, spacing: 5, textTopBottomPadding: 10, placeholder: "Search...", placeholderTextColor: .gray, leftImageName: "magnifyingglass", leftImageColor: .gray, leftImagePadding: 20, borderWidth: 2, enableMatching: true)
-            .padding(.top, 25)
+            .padding(.top, 30)
+            .padding(.bottom, 5)
             .padding([.leading, .trailing], 30)
     }
 
@@ -48,7 +49,7 @@ struct SearchView: View {
             }
         }
         .onTapGesture {
-            self.endEditing()
+            endEditing()
         }
     }
 
@@ -65,11 +66,5 @@ struct SearchView_Previews: PreviewProvider {
             BackgroundView()
             SearchView()
         }
-    }
-}
-
-extension UIApplication {
-    func endEditing() {
-        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

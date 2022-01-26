@@ -28,7 +28,7 @@
 		1DDAA3582779095000BDAE2B /* Color+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDAA3572779095000BDAE2B /* Color+App.swift */; };
 		1DFD1841277A610D003EE880 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFD1840277A610D003EE880 /* VisualEffectView.swift */; };
 		CE01CB452789101300E69190 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE01CB442789101300E69190 /* LoginViewModel.swift */; };
-		CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0260812792409800F725CC /* UIApplication+Windows.swift */; };
+		CE0260822792409800F725CC /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0260812792409800F725CC /* UIApplication+Extensions.swift */; };
 		CE18CC4227933E3100D4FC1B /* ActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18CC4127933E3100D4FC1B /* ActorView.swift */; };
 		CE18CC44279350C100D4FC1B /* ActorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18CC43279350C100D4FC1B /* ActorsView.swift */; };
 		CE38F0A2277BB44A00B148FC /* Art-Brewery.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */; };
@@ -112,7 +112,7 @@
 		9040256661AB9646CACA01ED /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C5ACE2C30C85000DD6DBBA /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
 		CE01CB442789101300E69190 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		CE0260812792409800F725CC /* UIApplication+Windows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Windows.swift"; sourceTree = "<group>"; };
+		CE0260812792409800F725CC /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		CE18CC4127933E3100D4FC1B /* ActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorView.swift; sourceTree = "<group>"; };
 		CE18CC43279350C100D4FC1B /* ActorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsView.swift; sourceTree = "<group>"; };
 		CE38F0A1277BB3A400B148FC /* Art-Brewery.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Art-Brewery.ttf"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				1DDAA3572779095000BDAE2B /* Color+App.swift */,
 				1DBD99AE277B58C600CD080A /* Font+App.swift */,
 				1D04BB03278466E100C3B561 /* UINavigationController+Appearance.swift */,
-				CE0260812792409800F725CC /* UIApplication+Windows.swift */,
+				CE0260812792409800F725CC /* UIApplication+Extensions.swift */,
 				CEA2A04B279C9FAF00A0262F /* Double+Extensions.swift */,
 			);
 			path = Extensions;
@@ -665,7 +665,7 @@
 				1D0AA0762784ECA90071E8D6 /* RatingCircleView.swift in Sources */,
 				CEA2A03E279C8F4200A0262F /* SearchViewModel.swift in Sources */,
 				1D4471012784D5CE008E636B /* iMovieCardView.swift in Sources */,
-				CE0260822792409800F725CC /* UIApplication+Windows.swift in Sources */,
+				CE0260822792409800F725CC /* UIApplication+Extensions.swift in Sources */,
 				CEA2A048279C926300A0262F /* MovieViewModel.swift in Sources */,
 				CEF85F642777A82B00517ED7 /* iMovieApp.swift in Sources */,
 				1DB0AFE22783A1F2006779D5 /* LoginView.swift in Sources */,

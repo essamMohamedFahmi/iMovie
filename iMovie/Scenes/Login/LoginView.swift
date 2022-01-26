@@ -12,6 +12,7 @@ struct LoginView: View {
 
     // MARK: - Properties
 
+    @EnvironmentObject var appState: AppState
     @ObservedObject private var loginViewModel = LoginViewModel()
 
     // MARK: - View Components
@@ -77,12 +78,13 @@ struct LoginView: View {
                 Spacer()
             }
         }
-        .fullScreenCover(
-            isPresented: $loginViewModel.shouldLogin,
-            content: HomeView.init
-        )
         .present(isPresented: $loginViewModel.error, type: .toast, position: .top) {
-            self.createToast(with: loginViewModel.errorMessage)
+            createToast(with: loginViewModel.errorMessage)
+        }
+        .onReceive(loginViewModel.$shouldLogin) { shouldLogin in
+            if shouldLogin {
+                appState.currentRoot = .home
+            }
         }
     }
 
